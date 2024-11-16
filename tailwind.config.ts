@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: [
@@ -9,10 +9,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "hsl(var(--background))",
+        background2: "hsl(var(--background2))",
+        foreground: "hsl(var(--foreground))",
+        light: "hsl(var(--light))",
+        darklight: "hsl(var(--darklight))",
+        dark: "hsl(var(--dark))",
+        verydark: "hsl(var(--verydark))",
+        sight: "hsl(var(--sight))",
+        hearing: "hsl(var(--hearing))",
+        touch: "hsl(var(--touch))",
+        smell: "hsl(var(--smell))",
+        taste: "hsl(var(--taste))",
+      },
+      fontFamily: {
+        fancy: ["var(--font-fancy)", "serif"],
       },
     },
   },
   plugins: [],
-} satisfies Config;
+  darkMode: "class",
+} satisfies Config
