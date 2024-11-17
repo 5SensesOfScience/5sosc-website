@@ -24,18 +24,20 @@ export default function TextSwitcher() {
   }, [])
 
   return (
-    <div className="w-full h-full flex flex-row items-center justify-center gap-4 md:gap-6 text-4xl md:text-6xl font-fancy">
-      <TextTransition
-        springConfig={presets.default}
-        inline
-        translateValue="100%"
-        className=""
-      >
-        <span className={COLVARS[index % COLVARS.length]}>
-          {TEXTS[index % TEXTS.length]}
-        </span>
-      </TextTransition>
-      <span>Science</span>
+    <div className="w-full h-full flex flex-row items-center justify-center">
+      <div className="flex flex-row items-start gap-4 md:gap-6 text-4xl md:text-6xl font-fancy">
+        <TextTransition
+          springConfig={presets.default}
+          inline
+          translateValue="100%"
+          className=""
+        >
+          <span className={COLVARS[index % COLVARS.length]}>
+            {TEXTS[index % TEXTS.length]}
+          </span>
+        </TextTransition>
+        <span>Science</span>
+      </div>
     </div>
   )
 }
