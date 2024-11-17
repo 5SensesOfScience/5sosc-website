@@ -29,7 +29,7 @@ export default function TextSwitcher() {
         springConfig={presets.default}
         inline
         translateValue="100%"
-        className="translate-y-2.5 sm:translate-y-1 md:translate-y-0"
+        className=""
       >
         <span className={COLVARS[index % COLVARS.length]}>
           {TEXTS[index % TEXTS.length]}
