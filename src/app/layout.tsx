@@ -3,6 +3,7 @@ import "./globals.css"
 import localFont from "next/font/local"
 import Header from "@/components/sections/header"
 import { ThemeProvider } from "@/components/meta/theme_provider"
+import Footer from "@/components/sections/footer"
 
 const fancyFont = localFont({
   src: [{ path: "fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div className="bg-background text-foreground">
             <Header />
             {children}
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
