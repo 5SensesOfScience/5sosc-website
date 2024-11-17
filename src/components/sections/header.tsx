@@ -5,10 +5,10 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   navigationMenuTriggerStyle,
-} from "./ui/navigation-menu"
+} from "@/components/ui/navigation-menu"
 import Image from "next/image"
-import { ModeToggle } from "./ui/mode-toggle"
-import Hamburger from "./ui/hamburger"
+import { ModeToggle } from "@/components/ui/mode-toggle"
+import Hamburger from "@/components/ui/hamburger"
 
 function Nav({ className }: { className?: string }) {
   return (
