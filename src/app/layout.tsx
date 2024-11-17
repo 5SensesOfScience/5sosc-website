@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import localFont from "next/font/local"
-import Header from "@/components/header"
-import { ThemeProvider } from "@/components/theme_provider"
+import Header from "@/components/sections/header"
+import { ThemeProvider } from "@/components/meta/theme_provider"
 
 const fancyFont = localFont({
   src: [{ path: "fonts/tan-nimbus.otf", weight: "700", style: "normal" }],

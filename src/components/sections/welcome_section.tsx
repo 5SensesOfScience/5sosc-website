@@ -1,4 +1,4 @@
-import TextSwitcher from "../text_switcher"
+import TextSwitcher from "../ui/text-switcher"
 
 export default function WelcomeSection() {
   return (
