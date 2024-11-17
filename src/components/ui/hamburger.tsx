@@ -23,7 +23,7 @@ export default function Hamburger({
       </button>
       <div
         className={
-          "transition-transform duration-300 w-content " +
+          "transition-transform duration-300 w-screen flex justify-center bg-background " +
           (isOpen ? "h-content" : "h-0")
         }
       >

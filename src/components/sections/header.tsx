@@ -5,10 +5,10 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   navigationMenuTriggerStyle,
-} from "./ui/navigation-menu"
+} from "@/components/ui/navigation-menu"
 import Image from "next/image"
-import { ModeToggle } from "./ui/mode-toggle"
-import Hamburger from "./ui/hamburger"
+import { ModeToggle } from "@/components/ui/mode-toggle"
+import Hamburger from "@/components/ui/hamburger"
 
 function Nav({ className }: { className?: string }) {
   return (
@@ -77,7 +77,7 @@ function HamburgerNav({ className }: { className?: string }) {
 
 export default function Header() {
   return (
-    <div className="relative md:sticky w-full h-content p-4 flex flex-col md:flex-row items-center justify-center md:justify-between">
+    <div className="sticky top-0 z-10 w-full h-content p-4 flex flex-col md:flex-row items-center justify-center md:justify-between bg-background">
       <Link href="/" passHref className="h-[50px] md:min-h-0">
         <div className="relative mx-4 h-full aspect-square">
           <Image
