@@ -6,7 +6,7 @@ export default function WelcomeSection() {
     <div className="w-full h-[calc(100svh-50px)]">
       <h1 id="top" className="hidden"></h1>
       <TextSwitcher />
-      <div className="absolute mx-auto bottom-2">
+      <div className="absolute ml-[50%] mr-auto -translate-x-[50%] bottom-2">
         <ArrowDown />
       </div>
     </div>
