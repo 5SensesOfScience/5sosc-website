@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "home": "Start",
+    "venue": "Miejsce",
+    "program": "Program",
+    "senses": "Zmysły",
+    "team": "Zespół",
+    "find_us": "Znajdź nas"
+  },
+  "Footer": {
+    "sponsors": "Sponsorzy",
+    "social_media": "Social Media",
+    "contact": "Kontakt"
+  },
+  "TextSwitcher": {
+    "see": "Zobacz",
+    "hear": "Usłysz",
+    "smell": "Powąchaj",
+    "taste": "Posmakuj",
+    "touch": "Dotknij",
+    "science": "Naukę"
+  },
+  "Highlights": {
+    "heading": "Wyróżnione"
+  }
+}

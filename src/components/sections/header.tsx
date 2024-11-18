@@ -9,51 +9,55 @@ import {
 import Image from "next/image"
 import { ModeToggle } from "@/components/ui/mode-toggle"
 import Hamburger from "@/components/ui/hamburger"
+import { useTranslations } from "next-intl"
+import LanguageSwitcher from "../ui/language-switcher"
 
 function Nav({ className }: { className?: string }) {
+  const t = useTranslations("Header")
+
   return (
     <nav className={className}>
       <NavigationMenu>
         <NavigationMenuList className="flex-col md:flex-row">
           <NavigationMenuItem>
-            <Link href="/#top" passHref>
+            <Link href="/#top" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Home
+                {t("home")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#venue" passHref>
+            <Link href="/#venue" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Venue
+                {t("venue")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#program" passHref>
+            <Link href="/#program" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Program
+                {t("program")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#senses" passHref>
+            <Link href="/#senses" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Senses
+                {t("senses")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#team" passHref>
+            <Link href="/#team" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Team
+                {t("team")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#findus" passHref>
+            <Link href="/#findus" passHref className="scroll-smooth">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Find us
+                {t("find_us")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -62,6 +66,10 @@ function Nav({ className }: { className?: string }) {
 
       <div className="m-auto w-fit h-fit">
         <ModeToggle />
+      </div>
+
+      <div className="m-auto w-fit h-fit">
+        <LanguageSwitcher />
       </div>
     </nav>
   )

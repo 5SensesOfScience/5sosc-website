@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 import { SiInstagram } from "react-icons/si"
@@ -22,6 +23,8 @@ function FooterSection({
 }
 
 export default function Footer() {
+  const t = useTranslations("Footer")
+
   return (
     <div className="p-4 flex flex-col md:flex-row items-center justify-between">
       <Image
@@ -31,8 +34,8 @@ export default function Footer() {
         height={100}
       />
       <div className="flex flex-col md:items-start md:flex-row gap-2 md:gap-6">
-        <FooterSection title="Sponsors">TBD</FooterSection>
-        <FooterSection title="Social Media">
+        <FooterSection title={t("sponsors")}>TBD</FooterSection>
+        <FooterSection title={t("social_media")}>
           <Link
             href="https://instagram.com/5sensesofscience"
             passHref
@@ -41,7 +44,7 @@ export default function Footer() {
             <SiInstagram />
           </Link>
         </FooterSection>
-        <FooterSection title="Contact">
+        <FooterSection title={t("contact")}>
           <Link href="mailto:5sensesofscience@gmail.com" className="py-2">
             5sensesofscience@gmail.com
           </Link>

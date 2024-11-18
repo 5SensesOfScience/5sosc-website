@@ -1,9 +1,9 @@
 "use client"
 
+import { useTranslations } from "next-intl"
 import { useState, useEffect } from "react"
 import TextTransition, { presets } from "react-text-transition"
 
-const TEXTS = ["See", "Hear", "Touch", "Smell", "Taste"]
 const COLVARS = [
   "text-sight",
   "text-hearing",
@@ -13,6 +13,7 @@ const COLVARS = [
 ]
 
 export default function TextSwitcher() {
+  const t = useTranslations("TextSwitcher")
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -23,9 +24,11 @@ export default function TextSwitcher() {
     return () => clearTimeout(intervalId)
   }, [])
 
+  const TEXTS = [t("see"), t("hear"), t("touch"), t("smell"), t("taste")]
+
   return (
     <div className="w-full h-full flex flex-row items-center justify-center">
-      <div className="flex flex-row items-start gap-4 md:gap-6 text-4xl md:text-6xl font-fancy">
+      <div className="flex flex-row items-start gap-4 md:gap-6 text-2xl md:text-6xl font-fancy">
         <TextTransition
           springConfig={presets.default}
           inline
@@ -36,7 +39,7 @@ export default function TextSwitcher() {
             {TEXTS[index % TEXTS.length]}
           </span>
         </TextTransition>
-        <span>Science</span>
+        <span>{t("science")}</span>
       </div>
     </div>
   )

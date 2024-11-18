@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "home": "Inici",
+    "venue": "Lloc",
+    "program": "Programa",
+    "senses": "Sentits",
+    "team": "L'equip",
+    "find_us": "Troba'ns"
+  },
+  "Footer": {
+    "sponsors": "Patrocinadors",
+    "social_media": "Xarxes socials",
+    "contact": "Contacte"
+  },
+  "TextSwitcher": {
+    "see": "Ves",
+    "hear": "Escolta",
+    "smell": "Olora",
+    "taste": "Gusta",
+    "touch": "Toca",
+    "science": "Ciència"
+  },
+  "Highlights": {
+    "heading": "Destacats"
+  }
+}
