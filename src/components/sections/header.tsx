@@ -9,10 +9,10 @@ import {
 import Image from "next/image"
 import { ModeToggle } from "@/components/ui/mode-toggle"
 import Hamburger from "@/components/ui/hamburger"
-import { useLocale, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
 import LanguageSwitcher from "../ui/language-switcher"
 
-function Nav({ className, locale }: { className?: string; locale: string }) {
+function Nav({ className }: { className?: string }) {
   const t = useTranslations("Header")
 
   function makeLink(path: string) {
@@ -83,22 +83,15 @@ function Nav({ className, locale }: { className?: string; locale: string }) {
   )
 }
 
-function HamburgerNav({
-  className,
-  locale,
-}: {
-  className?: string
-  locale: string
-}) {
+function HamburgerNav({ className }: { className?: string }) {
   return (
     <Hamburger className={className}>
-      <Nav locale={locale} />
+      <Nav />
     </Hamburger>
   )
 }
 
 export default function Header() {
-  const locale = useLocale()
   return (
     <div className="sticky top-0 z-10 w-full h-content p-4 flex flex-col md:flex-row items-center justify-center md:justify-between bg-background">
       <Link href="/" passHref className="h-[50px] md:min-h-0">
@@ -110,8 +103,8 @@ export default function Header() {
           />
         </div>
       </Link>
-      <Nav locale={locale} className="hidden md:flex" />
-      <HamburgerNav locale={locale} className="md:hidden" />
+      <Nav className="hidden md:flex" />
+      <HamburgerNav className="md:hidden" />
     </div>
   )
 }
