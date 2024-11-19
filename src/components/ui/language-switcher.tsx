@@ -1,6 +1,6 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/router"
 import { usePathname } from "@/i18n/routing"
 import { locales } from "@/i18n/meta"
 import {
@@ -17,10 +17,15 @@ export default function LanguageSwitcher() {
   const pathname = usePathname()
   const curr_locale = useLocale()
 
-  const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split("/")
-    segments[1] = locale
-    router.push(segments.join("/"))
+  const handleLanguageChange = (newLocale: string) => {
+    router.push(
+      {
+        pathname: router.pathname,
+        query: router.query,
+      },
+      router.asPath,
+      { locale: newLocale }
+    )
   }
 
   return (
