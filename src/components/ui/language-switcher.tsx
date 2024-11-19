@@ -1,7 +1,7 @@
 "use client"
 
-import { useRouter } from "next/router"
-import { usePathname } from "@/i18n/routing"
+import { useParams } from "next/navigation"
+import { usePathname, useRouter } from "@/i18n/routing"
 import { locales } from "@/i18n/meta"
 import {
   DropdownMenu,
@@ -11,21 +11,25 @@ import {
 } from "./dropdown-menu"
 import { Button } from "./button"
 import { useLocale } from "next-intl"
+import { useTransition } from "react"
 
 export default function LanguageSwitcher() {
   const router = useRouter()
   const pathname = usePathname()
+  const params = useParams()
   const curr_locale = useLocale()
+  const transition = useTransition()
 
   const handleLanguageChange = (newLocale: string) => {
-    router.push(
-      {
-        pathname: router.pathname,
-        query: router.query,
-      },
-      router.asPath,
-      { locale: newLocale }
-    )
+    transition[1](() => {
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
+        { pathname, params },
+        { locale: newLocale }
+      )
+    })
   }
 
   return (
