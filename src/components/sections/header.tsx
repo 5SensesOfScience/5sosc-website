@@ -16,7 +16,7 @@ function Nav({ className, locale }: { className?: string; locale: string }) {
   const t = useTranslations("Header")
 
   function makeLink(path: string) {
-    return locale + "/" + path
+    return "/" + path
   }
 
   return (
