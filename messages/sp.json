@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "venue": "Espacio",
+    "program": "Programa",
+    "senses": "Sentidos",
+    "team": "El equipo",
+    "find_us": "Encuentranos"
+  },
+  "Footer": {
+    "sponsors": "Patrocinadores",
+    "social_media": "Redes socialss",
+    "contact": "Contacto"
+  },
+  "TextSwitcher": {
+    "see": "Observa",
+    "hear": "Escucha",
+    "smell": "Huele",
+    "taste": "Saborea",
+    "touch": "Toca",
+    "science": "Ciéncia"
+  },
+  "Highlights": {
+    "heading": "Destacados"
+  }
+}

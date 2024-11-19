@@ -1,7 +1,7 @@
 {
   "Header": {
     "home": "Inici",
-    "venue": "Lloc",
+    "venue": "Espai",
     "program": "Programa",
     "senses": "Sentits",
     "team": "L'equip",
@@ -13,10 +13,10 @@
     "contact": "Contacte"
   },
   "TextSwitcher": {
-    "see": "Ves",
+    "see": "Observa",
     "hear": "Escolta",
     "smell": "Olora",
-    "taste": "Gusta",
+    "taste": "Assaboreix",
     "touch": "Toca",
     "science": "Ciència"
   },
