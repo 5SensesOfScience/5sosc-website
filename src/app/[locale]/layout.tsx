@@ -44,7 +44,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={fancyFont.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             <div className="bg-background text-foreground">
               <Header />
               {children}

@@ -1,4 +1,6 @@
-import Link from "next/link"
+"use client"
+
+import { Link } from "../../i18n/routing"
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -15,47 +17,81 @@ import LanguageSwitcher from "../ui/language-switcher"
 function Nav({ className }: { className?: string }) {
   const t = useTranslations("Header")
 
+  function makeLink(path: string) {
+    return "/" + path
+  }
+
   return (
     <nav className={className}>
       <NavigationMenu>
         <NavigationMenuList className="flex-col md:flex-row">
           <NavigationMenuItem>
-            <Link href="/#top" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#top")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("home")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#venue" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#venue")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("venue")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#program" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#program")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("program")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#senses" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#senses")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("senses")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#team" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#team")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("team")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/#findus" passHref className="scroll-smooth">
+            <Link
+              href={makeLink("#findus")}
+              legacyBehavior
+              passHref
+              className="scroll-smooth"
+            >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t("find_us")}
               </NavigationMenuLink>
