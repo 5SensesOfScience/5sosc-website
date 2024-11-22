@@ -8,7 +8,6 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "src/content/posts"
-    nested: true
     create: true
     slug: "{{slug}}"
     fields:
