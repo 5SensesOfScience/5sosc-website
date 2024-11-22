@@ -22,7 +22,7 @@ export async function getStaticProps({
   params,
   locale,
 }: {
-  params: any
+  params: { category: string }
   locale: string
 }) {
   const { category } = params
@@ -52,7 +52,13 @@ export default function CategoryPage({
   posts,
   category,
 }: {
-  posts: any[]
+  posts: {
+    slug: string
+    title: string
+    description: string
+    image: string
+    content: string
+  }[]
   category: string
 }) {
   return (

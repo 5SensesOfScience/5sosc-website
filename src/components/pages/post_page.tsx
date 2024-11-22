@@ -6,7 +6,7 @@ export async function getStaticProps({
   params,
   locale,
 }: {
-  params: any
+  params: { category: string; slug: string }
   locale: string
 }) {
   const { category, slug } = params
