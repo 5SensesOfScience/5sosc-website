@@ -45,9 +45,9 @@ export default async function LocaleLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            <div className="bg-background text-foreground">
+            <div className="bg-background text-foreground min-h-screen">
               <Header />
-              {children}
+              <div className="min-h-[70vh]">{children}</div>
               <Footer />
             </div>
           </NextIntlClientProvider>
