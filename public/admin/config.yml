@@ -4,3 +4,13 @@ backend:
   branch: main
 media_folder: "src/content/assets"
 public_folder: "src/content/assets"
+collections:
+  - name: "sight"
+    label: "Sight"
+    folder: "src/content/sight"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
