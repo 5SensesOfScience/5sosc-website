@@ -10,7 +10,14 @@ collections:
     folder: "src/content/posts"
     create: true
     slug: "{{slug}}"
+    path: "{{locale}}/posts/{{slug}}"
     fields:
+      - {
+          label: "Locale",
+          name: "locale",
+          widget: "select",
+          options: ["ca", "en", "es", "pl"],
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Date", name: "date", widget: "datetime" }
