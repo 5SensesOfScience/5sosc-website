@@ -14,7 +14,7 @@ export function generateStaticParams() {
 }
 
 const fancyFont = localFont({
-  src: [{ path: "../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
+  src: [{ path: "../../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
   variable: "--font-fancy",
 })
 
@@ -45,11 +45,7 @@ export default async function LocaleLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            <div className="bg-background text-foreground">
-              <Header />
-              {children}
-              <Footer />
-            </div>
+            <div className="bg-background text-foreground">{children}</div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

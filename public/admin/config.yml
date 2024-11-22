@@ -1,0 +1,6 @@
+backend:
+  name: git-gateway
+  repo: 5SensesOfScience/5sosc-website
+  branch: main
+media_folder: "src/content/assets"
+public_folder: "src/content/assets"
