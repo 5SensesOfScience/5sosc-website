@@ -9,11 +9,13 @@ export default async function sensePage({
   const { locale, sense } = await params
   const posts = await Promise.all(await getPostsByCategory(locale, "posts"))
   const sense_posts = posts.filter(
-    (post: { sense: string }) => post.sense === sense
+    (post: { sense: string }) =>
+      post.sense && post.sense.toLowerCase() === sense.toLowerCase()
   )
   return (
-    <div>
-      <h1>{sense.toUpperCase()}</h1>
+    <div className="px-4">
+      <h1 className="font-fancy text-2xl">{sense.toUpperCase()}</h1>
+      <hr className="my-2" />
       <CategoryList posts={sense_posts} sense={sense} />
     </div>
   )

@@ -4,7 +4,7 @@ import matter from "gray-matter"
 
 // Fetch all posts for a given category and locale
 export async function getPostsByCategory(locale: string, category: string) {
-  const directory = path.join(process.cwd(), "content", locale, category)
+  const directory = path.join(process.cwd(), "src", "content", locale, category)
   const files = await readdir(directory)
 
   return files.map(async (filename: string) => {
@@ -15,6 +15,7 @@ export async function getPostsByCategory(locale: string, category: string) {
     return {
       slug: filename.replace(".md", ""),
       title: data.title,
+      description: data.description,
       date: data.date,
       sense: data.sense,
     }
@@ -25,6 +26,7 @@ export async function getPostsByCategory(locale: string, category: string) {
 export async function getPost(locale: string, category: string, slug: string) {
   const filePath = path.join(
     process.cwd(),
+    "src",
     "content",
     locale,
     category,
@@ -35,6 +37,7 @@ export async function getPost(locale: string, category: string, slug: string) {
 
   return {
     title: data.title,
+    description: data.description,
     date: data.date,
     sense: data.sense,
     content,
