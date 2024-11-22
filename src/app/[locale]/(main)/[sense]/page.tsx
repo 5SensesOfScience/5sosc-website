@@ -3,14 +3,11 @@ import { getPostsByCategory } from "@/lib/server_utils"
 
 export default async function sensePage({
   params,
-  sense,
 }: {
-  params: { locale: string }
-  sense: string
+  params: Promise<{ locale: string; sense: string }>
 }) {
-  const posts = await Promise.all(
-    await getPostsByCategory(params.locale, "posts")
-  )
+  const { locale, sense } = await params
+  const posts = await Promise.all(await getPostsByCategory(locale, "posts"))
   const sense_posts = posts.filter(
     (post: { sense: string }) => post.sense === sense
   )
