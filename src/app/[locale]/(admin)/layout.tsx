@@ -2,9 +2,7 @@ import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import "@/app/globals.css"
 import localFont from "next/font/local"
-import Header from "@/components/sections/header"
 import { ThemeProvider } from "@/components/meta/theme_provider"
-import Footer from "@/components/sections/footer"
 import { routing } from "@/i18n/routing"
 import { notFound } from "next/navigation"
 import { getMessages, setRequestLocale } from "next-intl/server"
@@ -14,7 +12,7 @@ export function generateStaticParams() {
 }
 
 const fancyFont = localFont({
-  src: [{ path: "../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
+  src: [{ path: "../../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
   variable: "--font-fancy",
 })
 
@@ -45,11 +43,7 @@ export default async function LocaleLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            <div className="bg-background text-foreground">
-              <Header />
-              {children}
-              <Footer />
-            </div>
+            <div className="bg-background text-foreground">{children}</div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
