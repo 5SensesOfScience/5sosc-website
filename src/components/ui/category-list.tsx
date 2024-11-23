@@ -1,7 +1,6 @@
 "use client"
 
 import { Link } from "@/i18n/routing"
-import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 export default function CategoryList({
