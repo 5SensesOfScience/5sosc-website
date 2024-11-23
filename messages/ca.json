@@ -22,5 +22,14 @@
   },
   "Highlights": {
     "heading": "Destacats"
+  },
+  "PostView": {
+    "published": "Publicat",
+    "back": "Torna a",
+    "sight": "Vista",
+    "sound": "So",
+    "smell": "Olfacte",
+    "taste": "Gust",
+    "touch": "Tacte"
   }
 }

@@ -1,4 +1,5 @@
 import CategoryList from "@/components/ui/category-list"
+import SenseHeader from "@/components/ui/sense-header"
 import { getPostsByCategory } from "@/lib/server_utils"
 
 export default async function sensePage({
@@ -14,7 +15,7 @@ export default async function sensePage({
   )
   return (
     <div className="px-4">
-      <h1 className="font-fancy text-2xl">{sense.toUpperCase()}</h1>
+      <SenseHeader sense={sense} />
       <hr className="my-2" />
       <CategoryList posts={sense_posts} sense={sense} />
     </div>

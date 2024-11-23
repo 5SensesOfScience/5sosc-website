@@ -22,5 +22,14 @@
   },
   "Highlights": {
     "heading": "Destacados"
+  },
+  "PostView": {
+    "published": "Publicado",
+    "back": "Volver a",
+    "sight": "Vista",
+    "sound": "Sonido",
+    "smell": "Olfato",
+    "taste": "Gusto",
+    "touch": "Tacto"
   }
 }

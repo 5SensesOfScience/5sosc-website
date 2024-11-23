@@ -14,9 +14,11 @@ export async function getPostsByCategory(locale: string, category: string) {
 
     return {
       slug: filename.replace(".md", ""),
+      key: data.key,
       title: data.title,
       description: data.description,
       date: data.date,
+      image: data.image,
       sense: data.sense,
     }
   })
@@ -36,9 +38,11 @@ export async function getPost(locale: string, category: string, slug: string) {
   const { data, content } = matter(fileContents)
 
   return {
+    key: data.key,
     title: data.title,
     description: data.description,
     date: data.date,
+    image: data.image,
     sense: data.sense,
     content,
   }
