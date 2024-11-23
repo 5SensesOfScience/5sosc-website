@@ -36,7 +36,7 @@ export default function CategoryList({
                 <h2 className="text-xl">{post.title}</h2>
                 <p className="opacity-50">{post.description}</p>
               </div>
-              <div className="h-[20vw] max-h-[200px] aspect-[5/3]">
+              <div className="h-[20vh] max-h-[200px] aspect-[5/3]">
                 <Image
                   src={"/decap_assets/" + post.image}
                   alt={post.title}
