@@ -38,7 +38,9 @@ export default function PostView({
         Published on {new Date(post.date).toLocaleDateString(locale)}
       </p>
       <hr className="my-2" />
-      <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+      <div className="markdown">
+        <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+      </div>
 
       <nav className="flex justify-between mt-8">
         {previousPost && (
