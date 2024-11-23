@@ -41,7 +41,7 @@ export default function LanguageSwitcher() {
             <span className="sr-only">Toggle theme</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent align="end" className="bg-background">
           {locales.map((locale) => (
             <DropdownMenuItem
               key={locale}
