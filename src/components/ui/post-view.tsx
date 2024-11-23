@@ -44,11 +44,8 @@ export default function PostView({
         </p>
       </div>
       <hr className="my-2" />
-      <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row md:justify-between">
-        <div className="markdown">
-          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
-        </div>
-        <div className="max-w-full md:max-w-[30vw] aspect-[5/3]">
+      <div className="flex flex-col gap-4">
+        <div className="max-w-full max-h-[70vh] aspect-[5/3]">
           <Image
             src={"/decap_assets/" + post.image}
             alt={post.title}
@@ -57,6 +54,9 @@ export default function PostView({
             sizes="100vw"
             className="h-full w-auto mx-auto"
           />
+        </div>
+        <div className="markdown">
+          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </div>
       </div>
 
