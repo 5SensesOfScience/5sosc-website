@@ -11,7 +11,7 @@ export default function CategoryList({
   sense: string
 }) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-4">
       {posts.map(
         (post: {
           slug: string
@@ -19,18 +19,28 @@ export default function CategoryList({
           description: string
           image: string
         }) => (
-          <div
+          <Link
+            href={`/${sense}/${post.slug}`}
             key={post.slug}
-            className="flex flex-col md:flex-row items-stretch justify-between"
+            className="w-full p-2 cursor-pointer hover:bg-background2 transition-all duration-300"
           >
-            <div>
-              <Link legacyBehavior href={`/${sense}/${post.slug}`}>
-                <a className="text-xl">{post.title}</a>
-              </Link>
-              <p className="opacity-50">{post.description}</p>
+            <div className="w-full h-full flex flex-col-reverse md:flex-row gap-2 items-stretch justify-between">
+              <div className="flex flex-col items-center md:items-start">
+                <h2 className="text-xl">{post.title}</h2>
+                <p className="opacity-50">{post.description}</p>
+              </div>
+              <div className="h-[20vw] max-h-[200px] aspect-[5/3]">
+                <Image
+                  src={"/decap_assets/" + post.image}
+                  alt={post.title}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="h-full w-auto mx-auto"
+                />
+              </div>
             </div>
-            <Image src={post.image} alt={post.title} width={200} height={200} />
-          </div>
+          </Link>
         )
       )}
     </div>

@@ -23,13 +23,20 @@
   "Highlights": {
     "heading": "Wyróżnione"
   },
+  "SenseView": {
+    "empty": "Nic tu nie ma, wróć później!"
+  },
   "PostView": {
     "published": "Opublikowano",
     "back": "Powrót do:",
     "sight": "Wzrok",
-    "sound": "Słuch",
+    "hearing": "Słuch",
     "smell": "Węch",
     "taste": "Smak",
     "touch": "Dotyk"
+  },
+  "NotFound": {
+    "message": "Ta strona nie istnieje.",
+    "prompt": "Powrót do strony głównej"
   }
 }
