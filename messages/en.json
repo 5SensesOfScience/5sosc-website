@@ -22,5 +22,14 @@
   },
   "Highlights": {
     "heading": "Highlights"
+  },
+  "PostView": {
+    "published": "Published",
+    "back": "Back to",
+    "sight": "Sight",
+    "sound": "Sound",
+    "smell": "Smell",
+    "taste": "Taste",
+    "touch": "Touch"
   }
 }
