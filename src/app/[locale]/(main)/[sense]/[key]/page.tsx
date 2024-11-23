@@ -9,7 +9,9 @@ export default async function PostPage({
   const { locale, sense, key } = await params
   const post = await getPost(locale, "posts", key)
   const posts = await Promise.all(await getPostsByCategory(locale, "posts"))
-  const posts_good = posts.filter((post) => post.title)
+  const posts_good = posts.filter(
+    (post) => post.title && post.sense.toLowerCase() === sense.toLowerCase()
+  )
 
-  return <PostView sense={sense} key={key} post={post} posts={posts_good} />
+  return <PostView sense={sense} post={post} posts={posts_good} />
 }
