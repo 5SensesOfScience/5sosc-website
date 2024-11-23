@@ -23,13 +23,20 @@
   "Highlights": {
     "heading": "Destacats"
   },
+  "SenseView": {
+    "empty": "No hi ha res aquí, torna més tard!"
+  },
   "PostView": {
     "published": "Publicat",
     "back": "Torna a",
     "sight": "Vista",
-    "sound": "So",
+    "hearing": "Oïda",
     "smell": "Olfacte",
     "taste": "Gust",
     "touch": "Tacte"
+  },
+  "NotFound": {
+    "message": "Aquesta pàgina no existeix.",
+    "prompt": "Torna a la pàgina d'inici"
   }
 }

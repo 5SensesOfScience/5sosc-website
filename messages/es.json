@@ -23,13 +23,20 @@
   "Highlights": {
     "heading": "Destacados"
   },
+  "SenseView": {
+    "empty": "¡No hay nada aquí, vuelve más tarde!"
+  },
   "PostView": {
     "published": "Publicado",
     "back": "Volver a",
     "sight": "Vista",
-    "sound": "Sonido",
+    "hearing": "Oído",
     "smell": "Olfato",
     "taste": "Gusto",
     "touch": "Tacto"
+  },
+  "NotFound": {
+    "message": "Esta página no existe.",
+    "prompt": "Volver a la página de inicio"
   }
 }
