@@ -43,7 +43,7 @@ export default function PostView({
           Published on {new Date(post.date).toLocaleDateString(locale)}
         </p>
       </div>
-      <hr className="my-2" />
+      <hr className="my-2 border-foreground" />
       <div className="flex flex-col gap-4">
         <div className="max-w-full max-h-[70vh] aspect-[5/3]">
           <Image
