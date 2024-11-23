@@ -12,7 +12,7 @@ export function generateStaticParams() {
 }
 
 const fancyFont = localFont({
-  src: [{ path: "../../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
+  src: [{ path: "../fonts/tan-nimbus.otf", weight: "700", style: "normal" }],
   variable: "--font-fancy",
 })
 
@@ -21,30 +21,16 @@ export const metadata: Metadata = {
   description: "Experience science with all your senses",
 }
 
-export default async function LocaleLayout({
+export default async function Layout({
   children,
-  params,
 }: Readonly<{
   children: React.ReactNode
-  params: Promise<{ locale: string }>
 }>) {
-  const { locale } = await params
-
-  if (!routing.locales.includes(locale)) {
-    notFound()
-  }
-
-  setRequestLocale(locale)
-
-  const messages = await getMessages()
-
   return (
-    <html lang={locale} className={fancyFont.variable} suppressHydrationWarning>
+    <html className={fancyFont.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <div className="bg-background text-foreground">{children}</div>
-          </NextIntlClientProvider>
+          <div className="bg-background text-foreground">{children}</div>
         </ThemeProvider>
       </body>
     </html>
