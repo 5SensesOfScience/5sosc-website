@@ -22,9 +22,9 @@ export default async function sensePage({
   }
 
   return (
-    <div className="px-4">
+    <div className="px-4 pt-[50px]">
       <SenseHeader sense={sense} />
-      <hr className="my-2" />
+      <hr className="my-2 border-foreground" />
       {sense_posts.length > 0 ? (
         <CategoryList posts={sense_posts} sense={sense} />
       ) : (

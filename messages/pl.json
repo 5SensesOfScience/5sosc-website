@@ -36,6 +36,7 @@
     "touch": "Dotyk"
   },
   "NotFound": {
+    "heading": "Nie znaleziono",
     "message": "Ta strona nie istnieje.",
     "prompt": "Powrót do strony głównej"
   }

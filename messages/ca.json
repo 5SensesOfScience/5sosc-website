@@ -36,6 +36,7 @@
     "touch": "Tacte"
   },
   "NotFound": {
+    "heading": "No trobat",
     "message": "Aquesta pàgina no existeix.",
     "prompt": "Torna a la pàgina d'inici"
   }

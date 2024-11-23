@@ -36,6 +36,7 @@
     "touch": "Tacto"
   },
   "NotFound": {
+    "heading": "No encontrado",
     "message": "Esta página no existe.",
     "prompt": "Volver a la página de inicio"
   }

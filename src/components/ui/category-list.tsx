@@ -7,7 +7,13 @@ export default function CategoryList({
   posts,
   sense,
 }: {
-  posts: { slug: string; title: string; description: string; image: string }[]
+  posts: {
+    slug: string
+    key: string
+    title: string
+    description: string
+    image: string
+  }[]
   sense: string
 }) {
   return (
@@ -15,13 +21,14 @@ export default function CategoryList({
       {posts.map(
         (post: {
           slug: string
+          key: string
           title: string
           description: string
           image: string
         }) => (
           <Link
-            href={`/${sense}/${post.slug}`}
-            key={post.slug}
+            href={`/${sense}/${post.key}`}
+            key={post.key}
             className="w-full p-2 cursor-pointer hover:bg-background2 transition-all duration-300"
           >
             <div className="w-full h-full flex flex-col-reverse md:flex-row gap-2 items-stretch justify-between">
@@ -29,7 +36,7 @@ export default function CategoryList({
                 <h2 className="text-xl">{post.title}</h2>
                 <p className="opacity-50">{post.description}</p>
               </div>
-              <div className="h-[20vw] max-h-[200px] aspect-[5/3]">
+              <div className="h-[20vh] max-h-[200px] aspect-[5/3]">
                 <Image
                   src={"/decap_assets/" + post.image}
                   alt={post.title}

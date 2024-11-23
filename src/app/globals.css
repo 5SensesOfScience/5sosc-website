@@ -76,3 +76,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .markdown {
+    h1 {
+      @apply text-4xl font-fancy;
+    }
+
+    h2 {
+      @apply text-2xl font-semibold;
+    }
+
+    img {
+      @apply max-h-[200px] max-w-[300px] my-4;
+    }
+  }
+}

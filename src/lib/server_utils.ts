@@ -25,14 +25,17 @@ export async function getPostsByCategory(locale: string, category: string) {
 }
 
 // Fetch a single post by slug
-export async function getPost(locale: string, category: string, slug: string) {
+export async function getPost(locale: string, category: string, key: string) {
+  const posts = await Promise.all(await getPostsByCategory(locale, category))
+  const post = posts.find((p) => p.key === key)
+  if (!post) return null
   const filePath = path.join(
     process.cwd(),
     "src",
     "content",
     locale,
     category,
-    `${slug}.md`
+    `${post!.slug}.md`
   )
   const fileContents = await readFile(filePath, "utf-8")
   const { data, content } = matter(fileContents)
