@@ -4,16 +4,16 @@ import { Link } from "@/i18n/routing"
 
 export default function PostView({
   sense,
-  slug,
+  key,
   post,
   posts,
 }: {
   sense: string
-  slug: string
+  key: string
   post: { title: string; description: string; date: string; content: string }
-  posts: { slug: string; title: string }[]
+  posts: { slug: string; key: string; title: string }[]
 }) {
-  const currentIndex = posts.findIndex((p: { slug: string }) => p.slug === slug)
+  const currentIndex = posts.findIndex((p: { key: string }) => p.key === key)
   const previousPost = currentIndex > 0 ? posts[currentIndex - 1] : null
   const nextPost =
     currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null

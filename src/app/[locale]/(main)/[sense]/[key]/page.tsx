@@ -4,12 +4,12 @@ import PostView from "@/components/ui/post-view"
 export default async function PostPage({
   params,
 }: {
-  params: Promise<{ locale: string; sense: string; slug: string }>
+  params: Promise<{ locale: string; sense: string; key: string }>
 }) {
-  const { locale, sense, slug } = await params
-  const post = await getPost(locale, "posts", slug)
+  const { locale, sense, key } = await params
+  const post = await getPost(locale, "posts", key)
   const posts = await Promise.all(await getPostsByCategory(locale, "posts"))
   const posts_good = posts.filter((post) => post.title)
 
-  return <PostView sense={sense} slug={slug} post={post} posts={posts_good} />
+  return <PostView sense={sense} key={key} post={post} posts={posts_good} />
 }
