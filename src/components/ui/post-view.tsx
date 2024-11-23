@@ -2,8 +2,11 @@
 
 import { Link } from "@/i18n/routing"
 import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
+import { Button } from "./button"
+import { ArrowLeft, ArrowRight, Divide } from "lucide-react"
 
 export default function PostView({
   sense,
@@ -16,6 +19,7 @@ export default function PostView({
     title: string
     description: string
     date: string
+    image: string
     content: string
   }
   posts: { slug: string; key: string; title: string }[]
@@ -32,34 +36,60 @@ export default function PostView({
 
   return (
     <div className="px-4">
-      <h1 className="text-2xl font-fancy">{post.title}</h1>
-      <p className="text-lg opacity-75">{post.description}</p>
-      <p className="text-sm opacity-50">
-        Published on {new Date(post.date).toLocaleDateString(locale)}
-      </p>
+      <div className="flex flex-col items-center md:items-start">
+        <h1 className="text-2xl font-fancy">{post.title}</h1>
+        <p className="text-lg opacity-75">{post.description}</p>
+        <p className="text-sm opacity-50">
+          Published on {new Date(post.date).toLocaleDateString(locale)}
+        </p>
+      </div>
       <hr className="my-2" />
-      <div className="markdown">
-        <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+      <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row md:justify-between">
+        <div className="markdown">
+          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+        </div>
+        <div className="max-w-full md:max-w-[30vw] aspect-[5/3]">
+          <Image
+            src={"/decap_assets/" + post.image}
+            alt={post.title}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="h-full w-auto mx-auto"
+          />
+        </div>
       </div>
 
       <nav className="flex justify-between mt-8">
-        {previousPost && (
-          <Link legacyBehavior href={`/${sense}/${previousPost.slug}`}>
-            <a>&larr; {previousPost.title}</a>
+        {previousPost ? (
+          <Link legacyBehavior href={`/${sense}/${previousPost.key}`}>
+            <Button className="border-2 rounded-full">
+              <ArrowLeft />{" "}
+              <span className="hidden md:block">{previousPost.title}</span>
+            </Button>
           </Link>
+        ) : (
+          <div></div>
         )}
-        {nextPost && (
-          <Link legacyBehavior href={`/${sense}/${nextPost.slug}`}>
-            <a>{nextPost.title} &rarr;</a>
+        {nextPost ? (
+          <Link legacyBehavior href={`/${sense}/${nextPost.key}`}>
+            <Button className="border-2 rounded-full">
+              <span className="hidden md:block">{nextPost.title}</span>{" "}
+              <ArrowRight />
+            </Button>
           </Link>
+        ) : (
+          <div></div>
         )}
       </nav>
 
-      <Link legacyBehavior href={`/${sense}`}>
-        <a>
-          ← {t("back")} {t(sense)}
-        </a>
-      </Link>
+      <div className="flex items-center">
+        <Link legacyBehavior href={`/${sense}`} className="mx-auto">
+          <Button className="mx-auto w-fit">
+            ← {t("back")} {t(sense)}
+          </Button>
+        </Link>
+      </div>
     </div>
   )
 }
