@@ -2,6 +2,8 @@
 
 import { Link } from "@/i18n/routing"
 import { useLocale, useTranslations } from "next-intl"
+import Markdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 export default function PostView({
   sense,
@@ -36,7 +38,7 @@ export default function PostView({
         Published on {new Date(post.date).toLocaleDateString(locale)}
       </p>
       <hr className="my-2" />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
 
       <nav className="flex justify-between mt-8">
         {previousPost && (
