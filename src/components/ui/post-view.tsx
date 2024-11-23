@@ -6,7 +6,7 @@ import Image from "next/image"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { Button } from "./button"
-import { ArrowLeft, ArrowRight, Divide } from "lucide-react"
+import { ArrowLeft, ArrowRight } from "lucide-react"
 
 export default function PostView({
   sense,
