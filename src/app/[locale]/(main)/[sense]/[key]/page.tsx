@@ -12,7 +12,7 @@ export default async function PostPage({
   let post
   try {
     post = await getPost(locale, "posts", key)
-  } catch (e) {
+  } catch {
     notFound()
   }
   const posts = await Promise.all(await getPostsByCategory(locale, "posts"))
