@@ -4,7 +4,7 @@ import Highlight from "../ui/highlight"
 export default function HighlightsSection() {
   const t = useTranslations("Highlights")
   return (
-    <div className="px-4 flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       <h2 id="highlights" className="text-4xl font-fancy">
         {t("heading")}
       </h2>
