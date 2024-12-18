@@ -67,44 +67,75 @@ const senses = [
 export default function SensesSection() {
   const t = useTranslations("TextSwitcher");
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-8">
       {senses.map((sense, index) => (
-        <div key={index} className="flex flex-col gap-4">
-          <h2 className="text-4xl font-fancy text-${sense.name}">{t(sense.name) + " "+ t("science")}</h2>
+        <div key={index} className="flex flex-col gap-6">
+          {/* Title */}
+          <h2 className="text-xl font-fancy text-center md:text-left">
+            {t(sense.name) + " " + t("science")}
+          </h2>
 
-          <div className="flex w-full gap-8">
-            {/* Left big column */}
-            <div className="flex flex-col gap-2 flex-[1]">
+          {/* Grid of Images */}
+          <div
+            className="grid gap-4 md:grid-cols-[2fr_1fr_1fr]"
+          >
+            {/* First Column (2 rows, always visible) */}
+            <div className="grid grid-rows-2 gap-2 md:col-span-1 col-span-3 justify-items-center">
               {sense.imagesLeft.map((src, i) => (
                 <div
                   key={i}
-                  className="relative rounded-sm overflow-hidden"
-                  style={{ aspectRatio: "4 / 3" }}
+                  className="relative w-[70%] h-[90%] rounded-sm overflow-hidden"
+                  style={{
+                    aspectRatio: "16 / 9",
+                  }}
                 >
                   <Image
                     src={src}
                     alt={`${sense.name} large image ${i + 1}`}
                     layout="fill"
-                    objectFit="contain"
+                    objectFit="cover"
                     className="rounded-md"
                   />
                 </div>
               ))}
             </div>
 
-            {/* Right columns */}
-            <div className="grid grid-cols-2 gap-0 flex-[1]">
-              {sense.imagesRight.map((src, i) => (
+            {/* Second Column (3 rows, hidden on small screens) */}
+            <div className="grid grid-rows-3 gap-2 hidden md:grid justify-items-start">
+              {sense.imagesRight.slice(0, 3).map((src, i) => (
                 <div
                   key={i}
-                  className="relative w-[90%] h-[90%] rounded-sm overflow-hidden"
-                  style={{ aspectRatio: "4 / 3" }}
+                  className="relative w-[80%] h-auto rounded-sm overflow-hidden"
+                  style={{
+                    aspectRatio: "16 / 9",
+                  }}
                 >
                   <Image
                     src={src}
-                    alt={`${sense.name} small image ${i + 1}`}
-                    layout="fill" 
-                    objectFit="contain"
+                    alt={`${sense.name} middle column image ${i + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Third Column (3 rows, hidden on small screens) */}
+            <div className="grid grid-rows-3 gap-2 hidden md:grid justify-items-start">
+              {sense.imagesRight.slice(3, 6).map((src, i) => (
+                <div
+                  key={i}
+                  className="relative w-[80%] h-auto rounded-sm overflow-hidden"
+                  style={{
+                    aspectRatio: "16 / 9",
+                  }}
+                >
+                  <Image
+                    src={src}
+                    alt={`${sense.name} right column image ${i + 1}`}
+                    layout="fill"
+                    objectFit="cover"
                     className="rounded-md"
                   />
                 </div>
@@ -112,13 +143,13 @@ export default function SensesSection() {
             </div>
           </div>
 
-          {/* See more Button /// By now i don't have the translations */}
+          {/* See More Button */}
           <div className="flex justify-end w-full">
             <Link
               href={"/" + sense.name}
-              className="text-xl text-blue-500 hover:underline"
+              className="text-sm text-blue-400 hover:underline"
             >
-              See more...
+              {t("seemore")}
             </Link>
           </div>
         </div>
@@ -126,6 +157,11 @@ export default function SensesSection() {
     </div>
   );
 }
+
+
+
+
+
 
 
 
