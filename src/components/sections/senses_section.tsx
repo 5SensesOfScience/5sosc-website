@@ -18,7 +18,7 @@ const senses = [
   },
   {
     name: "hear",
-    sense: "hear",
+    sense: "hearing",
     imagesLeft: [{ src: "/example.jpg", href: "/hearing" }, { src: "/example.jpg", href: "/hearing" }],
     imagesRight: [
       { src: "/example.jpg", href: "/hearing" },

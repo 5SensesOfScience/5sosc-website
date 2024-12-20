@@ -14,7 +14,7 @@ export default function generateGrid({
         {imagesLeft.map(({ src, href }, i) => (
           <div
             key={i}
-            className="relative w-[70%] h-[90%] rounded-sm overflow-hidden"
+            className="flex w-[70%] h-[90%] rounded-sm overflow-hidden"
             style={{
               aspectRatio: "16 / 9",
             }}
