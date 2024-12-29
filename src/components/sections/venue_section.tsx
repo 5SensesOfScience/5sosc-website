@@ -1,6 +1,6 @@
 export default function VenueSection() {
   return (
-    <div className="py-8">
+    <div id = "venue" className="py-8">
       <div className="max-w-3xl mx-auto">
         <div>
           <img

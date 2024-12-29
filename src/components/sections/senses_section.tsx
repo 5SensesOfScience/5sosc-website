@@ -73,7 +73,7 @@ const senses = [
 export default function SensesSection() {
   const t = useTranslations("TextSwitcher");
   return (
-    <div className="flex flex-col gap-8">
+    <div id = "senses" className="flex flex-col gap-8">
       {senses.map((sense, index) => (
         <div key={index} className="flex flex-col gap-6">
           {/* Title */}

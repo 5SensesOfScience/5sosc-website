@@ -11,8 +11,8 @@ export default function ProgrammeSection() {
   ];
 
   return (
-    <div className="py-12 px-6">
-      <h2 id="senses" className="text-4xl font-fancy text-center mb-20">
+    <div id = "program" className="py-12 px-6">
+      <h2 className="text-4xl font-fancy text-center mb-20">
         {t("heading_programme")}
       </h2>
 
