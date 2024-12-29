@@ -1,6 +1,6 @@
 export default function VenueSection() {
   return (
-    <section className="py-8">
+    <div className="py-8">
       <div className="max-w-3xl mx-auto">
         <div>
           <img
@@ -14,7 +14,7 @@ export default function VenueSection() {
           <p className="text-4xl font-semibold">Our venue name</p>
           <p className="text-2xl font-semibold">Our venue address, 111, postal code</p>
       </div>
-    </section>
+    </div>
   );
 }
 

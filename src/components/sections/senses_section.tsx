@@ -77,8 +77,9 @@ export default function SensesSection() {
       {senses.map((sense, index) => (
         <div key={index} className="flex flex-col gap-6">
           {/* Title */}
-          <h2 className="text-xl font-fancy text-center md:text-left">
-            {t(sense.name) + " " + t("science")}
+          <h2 className="text-2xl font-fancy text-center md:text-left">
+            <span className={`${"text-"+sense.sense}`}>{t(sense.name)}</span>{" "}
+            <span className="text-white">{t("science")}</span>
           </h2>
 
           {/* Grid of Images */}

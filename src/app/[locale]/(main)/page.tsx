@@ -3,6 +3,7 @@ import SensesSection from "@/components/sections/senses_section"
 import WelcomeSection from "@/components/sections/welcome_section"
 import TeamSection from "@/components/sections/team_section"
 import VenueSection from "@/components/sections/venue_section"
+import ProgrammeSection from "@/components/sections/programme_section"
 import { setRequestLocale } from "next-intl/server"
 
 export default async function Home({
@@ -19,6 +20,7 @@ export default async function Home({
       <WelcomeSection />
       <HighlightsSection />
       <VenueSection />
+      <ProgrammeSection />
       <SensesSection />
       <TeamSection />
     </div>
