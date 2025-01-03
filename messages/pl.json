@@ -24,13 +24,13 @@
   "Highlights": {
     "heading": "Wyróżnione"
   },
-  "Programme":{
+  "Programme": {
     "see": "Zobacz",
     "hear": "Usłysz",
     "smell": "Powąchaj",
     "taste": "Posmakuj",
     "touch": "Dotknij",
-    "heading_programme": "5 Senses of Science - Event Programme",
+    "heading_programme": "5 Senses of Science - Program Wydarzenia",
     "see_t1": "Cool thing 1",
     "see_t2": "Cool thing 2",
     "see_t3": "Cool thing 3",
@@ -53,14 +53,14 @@
     "touch_t4": "Cool thing 4"
   },
   "Team": {
-    "heading": "Five Senses Of Science Team",
-    "Alba_role": "Live Event Coordinator",
-    "Albert_role": "Live Event Lead",
-    "Anastasia_role": "Graphic Designer",
+    "heading": "Zespół Five Senses Of Science",
+    "Alba_role": "Koordynatorka wydarzenia",
+    "Albert_role": "Kierownik wydarzenia",
+    "Anastasia_role": "Projektantka graficzna",
     "Emilio_role": "Empty",
     "Felipe_role": "Empty",
-    "Igor_role": "Website Lead",
-    "Josep_role": "Web Developer",
+    "Igor_role": "Kierownik strony",
+    "Josep_role": "Deweloper strony",
     "Judit_role": "Empty",
     "Juliette_role": "Empty",
     "Pablo_role": "Empty",
