@@ -12,62 +12,62 @@ export default function TeamSection() {
 
   const teamMembers: Array<Member> = [
     {
-      image: "/example.jpg",
+      image: "alba.jpg",
       name: "Alba",
       role: t("Alba_role"),
     },
     {
-      image: "/example.jpg",
+      image: "albert.jpg",
       name: "Albert",
       role: t("Albert_role"),
     },
     {
-      image: "/example.jpg",
+      image: "anastasia.jpg",
       name: "Anastasia",
       role: t("Anastasia_role"),
     },
     {
-      image: "/example.jpg",
+      image: "emilio.jpg",
       name: "Emilio",
       role: t("Emilio_role"),
     },
     {
-      image: "/example.jpg",
+      image: "felipe.jpg",
       name: "Felipe",
       role: t("Felipe_role"),
     },
     {
-      image: "/team_photos/igor.png",
+      image: "igor.jpg",
       name: "Igor",
       role: t("Igor_role"),
     },
     {
-      image: "/example.jpg",
+      image: "josep.jpg",
       name: "Josep",
       role: t("Josep_role"),
     },
     {
-      image: "/example.jpg",
+      image: "judit.jpg",
       name: "Judit",
       role: t("Judit_role"),
     },
     {
-      image: "/example.jpg",
+      image: "juliette.jpg",
       name: "Juliette",
       role: t("Juliette_role"),
     },
     {
-      image: "/example.jpg",
+      image: "pablo.jpg",
       name: "Pablo",
       role: t("Pablo_role"),
     },
     {
-      image: "/example.jpg",
+      image: "tamara.jpg",
       name: "Tamara",
       role: t("Tamara_role"),
     },
     {
-      image: "/example.jpg",
+      image: "valentina.jpg",
       name: "Valentina",
       role: t("Valentina_role"),
     },
@@ -83,7 +83,7 @@ export default function TeamSection() {
           <div key={index} className="flex items-center space-x-4">
             <div className="relative w-24 h-24">
               <Image
-                src={member.image}
+                src={"/team_photos/" + member.image}
                 alt={member.name}
                 fill={true}
                 className="object-cover"
