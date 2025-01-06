@@ -20,12 +20,11 @@
     "touch": "Toca",
     "science": "Ciència",
     "seemore": "Veure més..."
-    
   },
   "Highlights": {
     "heading": "Destacats"
   },
-  "Programme":{
+  "Programme": {
     "see": "Observa",
     "hear": "Escolta",
     "smell": "Olora",
@@ -62,7 +61,7 @@
     "Felipe_role": "Empty",
     "Igor_role": "Responsable del Lloc Web",
     "Josep_role": "Desenvolupador Web",
-    "Judit_role": "Empty",
+    "Judit_role": "Responsable del Sentit de Tacte",
     "Juliette_role": "Empty",
     "Pablo_role": "Empty",
     "Tamara_role": "Empty",
