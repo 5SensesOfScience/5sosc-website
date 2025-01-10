@@ -20,12 +20,11 @@
     "touch": "Toca",
     "science": "Ciència",
     "seemore": "Veure més..."
-    
   },
   "Highlights": {
     "heading": "Destacats"
   },
-  "Programme":{
+  "Programme": {
     "see": "Observa",
     "hear": "Escolta",
     "smell": "Olora",
@@ -56,16 +55,16 @@
   "Team": {
     "heading": "Equip de Five Senses Of Science",
     "Alba_role": "Coordinadora d'Esdeveniments en Viu",
-    "Albert_role": "Responsable d'Esdeveniments en Viu",
+    "Albert_role": "Líder d'Esdeveniments en Viu",
     "Anastasia_role": "Dissenyadora Gràfica",
     "Emilio_role": "Empty",
     "Felipe_role": "Empty",
-    "Igor_role": "Responsable del Lloc Web",
+    "Igor_role": "Líder del Lloc Web",
     "Josep_role": "Desenvolupador Web",
-    "Judit_role": "Empty",
+    "Judit_role": "Líder del Sentit de Tacte",
     "Juliette_role": "Empty",
     "Pablo_role": "Empty",
-    "Tamara_role": "Empty",
+    "Tamara_role": "Administradora de Xarxes Socials",
     "Valentina_role": "Empty"
   },
   "SenseView": {

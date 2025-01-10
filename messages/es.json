@@ -24,7 +24,7 @@
   "Highlights": {
     "heading": "Destacados"
   },
-  "Programme":{
+  "Programme": {
     "see": "Observa",
     "hear": "Escucha",
     "smell": "Huele",
@@ -53,18 +53,18 @@
     "touch_t4": "Cool thing 4"
   },
   "Team": {
-    "heading": "Five Senses Of Science Team",
+    "heading": "Equipo Five Senses Of Science",
     "Alba_role": "Coordinadora de Eventos en Vivo",
-    "Albert_role": "Responsable de Eventos en Vivo",
+    "Albert_role": "Líder de Eventos en Vivo",
     "Anastasia_role": "Diseñadora Gráfica",
     "Emilio_role": "Empty",
     "Felipe_role": "Empty",
-    "Igor_role": "Responsable del Sitio Web",
+    "Igor_role": "Líder del Sitio Web",
     "Josep_role": "Desarrollador Web",
-    "Judit_role": "Empty",
+    "Judit_role": "Líder del Sentido de Tacto",
     "Juliette_role": "Empty",
     "Pablo_role": "Empty",
-    "Tamara_role": "Empty",
+    "Tamara_role": "Administradora de Redes Sociales",
     "Valentina_role": "Empty"
   },
   "SenseView": {
