@@ -1,5 +1,5 @@
-import HighlightsSection from "@/components/sections/highlights_section"
-import SensesSection from "@/components/sections/senses_section"
+// import HighlightsSection from "@/components/sections/highlights_section"
+// import SensesSection from "@/components/sections/senses_section"
 import WelcomeSection from "@/components/sections/welcome_section"
 import TeamSection from "@/components/sections/team_section"
 import VenueSection from "@/components/sections/venue_section"

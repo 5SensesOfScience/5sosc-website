@@ -33,9 +33,6 @@ export default function ProgrammeSection() {
   const Time = function (h: number, m: number) {
     return new Date().setHours(h, m)
   }
-  const Filler = function () {
-    return <p className="hidden md:block"></p>
-  }
 
   return (
     <div id="program" className="py-12 px-6">
