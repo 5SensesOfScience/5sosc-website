@@ -18,10 +18,10 @@ export default async function Home({
   return (
     <div className="px-4 flex flex-col gap-4">
       <WelcomeSection />
-      <HighlightsSection />
+      {/*<HighlightsSection />*/}
       <VenueSection />
       <ProgrammeSection />
-      <SensesSection />
+      {/*<SensesSection />*/}
       <TeamSection />
     </div>
   )
