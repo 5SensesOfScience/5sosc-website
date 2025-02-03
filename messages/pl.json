@@ -24,6 +24,9 @@
   "Highlights": {
     "heading": "Wyróżnione"
   },
+  "Venue": {
+    "heading": "Miejsce"
+  },
   "Programme": {
     "see": "Zobacz",
     "hear": "Usłysz",
@@ -31,41 +34,30 @@
     "taste": "Posmakuj",
     "touch": "Dotknij",
     "heading_programme": "5 Senses of Science - Program Wydarzenia",
-    "see_t1": "Cool thing 1",
-    "see_t2": "Cool thing 2",
-    "see_t3": "Cool thing 3",
-    "see_t4": "Cool thing 4",
-    "hear_t1": "Cool thing 1",
-    "hear_t2": "Cool thing 2",
-    "hear_t3": "Cool thing 3",
-    "hear_t4": "Cool thing 4",
-    "smell_t1": "Cool thing 1",
-    "smell_t2": "Cool thing 2",
-    "smell_t3": "Cool thing 3",
-    "smell_t4": "Cool thing 4",
-    "taste_t1": "Cool thing 1",
-    "taste_t2": "Cool thing 2",
-    "taste_t3": "Cool thing 3",
-    "taste_t4": "Cool thing 4",
-    "touch_t1": "Cool thing 1",
-    "touch_t2": "Cool thing 2",
-    "touch_t3": "Cool thing 3",
-    "touch_t4": "Cool thing 4"
+    "see_t1": "Czerwony i niebieski",
+    "see_t2": "Patrz, naukowiec!",
+    "hear_t1": "Usłysz funkcję Wignera",
+    "hear_t2": "Percepcja dźwięku w 3D",
+    "smell_t1": "Twoje własne laboratorium esencji",
+    "taste_t1": "Stacja sferyfikacja",
+    "touch_t1": "DNA mitochondrialne",
+    "touch_t2": "Choroby mitochondriów",
+    "touch_t3": "Produkcja ATP"
   },
   "Team": {
     "heading": "Zespół Five Senses Of Science",
     "Alba_role": "Koordynatorka wydarzenia",
     "Albert_role": "Kierownik wydarzenia",
     "Anastasia_role": "Projektantka graficzna",
-    "Emilio_role": "Empty",
-    "Felipe_role": "Empty",
+    "Emilio_role": "Koordynator aktywności węchu",
+    "Felipe_role": "Koordynator aktywności słuchu",
     "Igor_role": "Kierownik strony",
     "Josep_role": "Deweloper strony",
-    "Judit_role": "Koordynatorka zmysłu dotyku",
-    "Juliette_role": "Empty",
-    "Pablo_role": "Empty",
+    "Judit_role": "Koordynatorka aktywności dotyku",
+    "Juliette_role": "Koordynatorka aktywności wzroku",
+    "Pablo_role": "Koordynator aktywności smaku",
     "Tamara_role": "Administratorka social media",
-    "Valentina_role": "Empty"
+    "Valentina_role": "Administratorka social media"
   },
   "SenseView": {
     "empty": "Nic tu nie ma, wróć później!"

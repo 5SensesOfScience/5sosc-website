@@ -24,6 +24,9 @@
   "Highlights": {
     "heading": "Destacats"
   },
+  "Venue": {
+    "heading": "Espai"
+  },
   "Programme": {
     "see": "Observa",
     "hear": "Escolta",
@@ -31,41 +34,30 @@
     "taste": "Assaboreix",
     "touch": "Toca",
     "heading_programme": "5 Senses of Science - Programa del event",
-    "see_t1": "Cool thing 1",
-    "see_t2": "Cool thing 2",
-    "see_t3": "Cool thing 3",
-    "see_t4": "Cool thing 4",
-    "hear_t1": "Cool thing 1",
-    "hear_t2": "Cool thing 2",
-    "hear_t3": "Cool thing 3",
-    "hear_t4": "Cool thing 4",
-    "smell_t1": "Cool thing 1",
-    "smell_t2": "Cool thing 2",
-    "smell_t3": "Cool thing 3",
-    "smell_t4": "Cool thing 4",
-    "taste_t1": "Cool thing 1",
-    "taste_t2": "Cool thing 2",
-    "taste_t3": "Cool thing 3",
-    "taste_t4": "Cool thing 4",
-    "touch_t1": "Cool thing 1",
-    "touch_t2": "Cool thing 2",
-    "touch_t3": "Cool thing 3",
-    "touch_t4": "Cool thing 4"
+    "see_t1": "Vermell i blau",
+    "see_t2": "Mira, un científic!",
+    "hear_t1": "Escolta la funció de Wigner",
+    "hear_t2": "Percepció del só en 3D",
+    "smell_t1": "El teu propi laboratori d'essències",
+    "taste_t1": "Estació esferificació",
+    "touch_t1": "DNA mitocondrial",
+    "touch_t2": "Malaltia mitocondrial",
+    "touch_t3": "Producció d'ATP"
   },
   "Team": {
-    "heading": "Equip de Five Senses Of Science",
-    "Alba_role": "Coordinadora d'Esdeveniments en Viu",
-    "Albert_role": "Líder d'Esdeveniments en Viu",
-    "Anastasia_role": "Dissenyadora Gràfica",
-    "Emilio_role": "Empty",
-    "Felipe_role": "Empty",
-    "Igor_role": "Líder del Lloc Web",
-    "Josep_role": "Desenvolupador Web",
-    "Judit_role": "Líder del Sentit de Tacte",
-    "Juliette_role": "Empty",
-    "Pablo_role": "Empty",
-    "Tamara_role": "Administradora de Xarxes Socials",
-    "Valentina_role": "Empty"
+    "heading": "Equip de Five Senses of Science",
+    "Alba_role": "Coordinadora d'esdeveniments en viu",
+    "Albert_role": "Líder d'esdeveniments en viu",
+    "Anastasia_role": "Dissenyadora gràfica",
+    "Emilio_role": "Coordinador d'activitats de l'olfacte",
+    "Felipe_role": "Coordinador d'activitats de l'oïda",
+    "Igor_role": "Líder del lloc web",
+    "Josep_role": "Desenvolupador web",
+    "Judit_role": "Coordinadora d'activitats del tacte",
+    "Juliette_role": "Coordinadora d'activitats de la vista",
+    "Pablo_role": "Coordinador d'activitats del gust",
+    "Tamara_role": "Administradora de xarxes socials",
+    "Valentina_role": "Administradora de xarxes socials"
   },
   "SenseView": {
     "empty": "No hi ha res aquí, torna més tard!"
