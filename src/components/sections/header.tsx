@@ -61,7 +61,7 @@ function Nav({ className }: { className?: string }) {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/*<NavigationMenuItem>
             <Link
               href={makeLink("#senses")}
               legacyBehavior
@@ -72,7 +72,7 @@ function Nav({ className }: { className?: string }) {
                 {t("senses")}
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem>*/}
           <NavigationMenuItem>
             <Link
               href={makeLink("#team")}
@@ -85,7 +85,7 @@ function Nav({ className }: { className?: string }) {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
+          {/*<NavigationMenuItem>
             <Link
               href={makeLink("#findus")}
               legacyBehavior
@@ -96,7 +96,7 @@ function Nav({ className }: { className?: string }) {
                 {t("find_us")}
               </NavigationMenuLink>
             </Link>
-          </NavigationMenuItem>
+          </NavigationMenuItem>*/}
         </NavigationMenuList>
       </NavigationMenu>
 
