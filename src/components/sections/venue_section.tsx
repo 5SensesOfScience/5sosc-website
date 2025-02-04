@@ -9,7 +9,7 @@ export default function VenueSection() {
       <div className="w-full max-w-3xl mx-auto">
         <div className="w-full h-full">
           <Image
-            src="/venue.png"
+            src="/floorplan.png"
             alt="Venue layout"
             width={1000}
             height={500}
