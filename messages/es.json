@@ -24,6 +24,9 @@
   "Highlights": {
     "heading": "Destacados"
   },
+  "Venue": {
+    "heading": "Espacio"
+  },
   "Programme": {
     "see": "Observa",
     "hear": "Escucha",
@@ -31,41 +34,30 @@
     "taste": "Saborea",
     "touch": "Toca",
     "heading_programme": "5 Senses of Science - Programa del evento",
-    "see_t1": "Cool thing 1",
-    "see_t2": "Cool thing 2",
-    "see_t3": "Cool thing 3",
-    "see_t4": "Cool thing 4",
-    "hear_t1": "Cool thing 1",
-    "hear_t2": "Cool thing 2",
-    "hear_t3": "Cool thing 3",
-    "hear_t4": "Cool thing 4",
-    "smell_t1": "Cool thing 1",
-    "smell_t2": "Cool thing 2",
-    "smell_t3": "Cool thing 3",
-    "smell_t4": "Cool thing 4",
-    "taste_t1": "Cool thing 1",
-    "taste_t2": "Cool thing 2",
-    "taste_t3": "Cool thing 3",
-    "taste_t4": "Cool thing 4",
-    "touch_t1": "Cool thing 1",
-    "touch_t2": "Cool thing 2",
-    "touch_t3": "Cool thing 3",
-    "touch_t4": "Cool thing 4"
+    "see_t1": "Rojo y azul",
+    "see_t2": "Mira, un científico!",
+    "hear_t1": "Escucha la función de Wigner",
+    "hear_t2": "Percepción del sonido en 3D",
+    "smell_t1": "Tu propio laboratorio de esencias",
+    "taste_t1": "Estación esferificación",
+    "touch_t1": "DNA mitocondrial",
+    "touch_t2": "Enfermedad mitocondrial",
+    "touch_t3": "Producción del ATP"
   },
   "Team": {
     "heading": "Equipo Five Senses Of Science",
-    "Alba_role": "Coordinadora de Eventos en Vivo",
-    "Albert_role": "Líder de Eventos en Vivo",
-    "Anastasia_role": "Diseñadora Gráfica",
-    "Emilio_role": "Empty",
-    "Felipe_role": "Empty",
-    "Igor_role": "Líder del Sitio Web",
-    "Josep_role": "Desarrollador Web",
-    "Judit_role": "Líder del Sentido de Tacto",
-    "Juliette_role": "Empty",
-    "Pablo_role": "Empty",
-    "Tamara_role": "Administradora de Redes Sociales",
-    "Valentina_role": "Empty"
+    "Alba_role": "Coordinadora de eventos en vivo",
+    "Albert_role": "Líder de eventos en vivo",
+    "Anastasia_role": "Diseñadora gráfica",
+    "Emilio_role": "Coordinador de actividades del olfato",
+    "Felipe_role": "Coordinador de actividades del oído",
+    "Igor_role": "Líder del sitio web",
+    "Josep_role": "Desarrollador web",
+    "Judit_role": "Coordinadora de actividades del tacto",
+    "Juliette_role": "Coordinadora de actividades de la vista",
+    "Pablo_role": "Coordinador de actividades del gusto",
+    "Tamara_role": "Administradora de redes sociales",
+    "Valentina_role": "Administradora de redes sociales"
   },
   "SenseView": {
     "empty": "¡No hay nada aquí, vuelve más tarde!"

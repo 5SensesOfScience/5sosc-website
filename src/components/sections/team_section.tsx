@@ -75,19 +75,19 @@ export default function TeamSection() {
 
   return (
     <div id="team" className="flex flex-col">
-      <h2 className="text-4xl font-fancy mb-12 text-center md:text-left">
-        {t("heading")}
-      </h2>
+      <h2 className="text-4xl font-fancy mb-12 text-center">{t("heading")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-40 mx-auto">
         {teamMembers.map((member, index) => (
           <div key={index} className="flex items-center space-x-4">
-            <div className="relative w-24 h-24">
-              <Image
-                src={"/team_photos/" + member.image}
-                alt={member.name}
-                fill={true}
-                className="object-cover"
-              />
+            <div className="relative">
+              <div className="w-24 h-24">
+                <Image
+                  src={"/team_photos/" + member.image}
+                  alt={member.name}
+                  fill={true}
+                  className="object-cover"
+                />
+              </div>
             </div>
             <div>
               <h3 className="text-2xl font-semibold">{member.name}</h3>

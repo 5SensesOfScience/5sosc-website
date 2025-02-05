@@ -24,6 +24,9 @@
   "Highlights": {
     "heading": "Highlights"
   },
+  "Venue": {
+    "heading": "Venue"
+  },
   "Programme": {
     "see": "See",
     "hear": "Hear",
@@ -31,41 +34,30 @@
     "taste": "Taste",
     "touch": "Touch",
     "heading_programme": "5 Senses of Science - Event Programme",
-    "see_t1": "Cool thing 1",
-    "see_t2": "Cool thing 2",
-    "see_t3": "Cool thing 3",
-    "see_t4": "Cool thing 4",
-    "hear_t1": "Cool thing 1",
-    "hear_t2": "Cool thing 2",
-    "hear_t3": "Cool thing 3",
-    "hear_t4": "Cool thing 4",
-    "smell_t1": "Cool thing 1",
-    "smell_t2": "Cool thing 2",
-    "smell_t3": "Cool thing 3",
-    "smell_t4": "Cool thing 4",
-    "taste_t1": "Cool thing 1",
-    "taste_t2": "Cool thing 2",
-    "taste_t3": "Cool thing 3",
-    "taste_t4": "Cool thing 4",
-    "touch_t1": "Cool thing 1",
-    "touch_t2": "Cool thing 2",
-    "touch_t3": "Cool thing 3",
-    "touch_t4": "Cool thing 4"
+    "see_t1": "Red and Blue",
+    "see_t2": "Behold, a Scientist!",
+    "hear_t1": "Hear the Wigner Function",
+    "hear_t2": "3D Perception of Sound",
+    "smell_t1": "Build Your Own Essence Lab",
+    "taste_t1": "Spherification Station",
+    "touch_t1": "Mitochondrial DNA",
+    "touch_t2": "Mitochondrial Disease",
+    "touch_t3": "ATP Production"
   },
   "Team": {
     "heading": "Five Senses Of Science Team",
     "Alba_role": "Live Event Coordinator",
     "Albert_role": "Live Event Lead",
     "Anastasia_role": "Graphic Designer",
-    "Emilio_role": "Empty",
-    "Felipe_role": "Empty",
+    "Emilio_role": "Smell Activity Coordinator",
+    "Felipe_role": "Hearing Activity Coordinator",
     "Igor_role": "Website Lead",
     "Josep_role": "Web Developer",
-    "Judit_role": "Touch Sense Lead",
-    "Juliette_role": "Empty",
-    "Pablo_role": "Empty",
+    "Judit_role": "Touch Activity Coordinator",
+    "Juliette_role": "Sight Activity Coordinator",
+    "Pablo_role": "Taste Activity Coordinator",
     "Tamara_role": "Social Media Manager",
-    "Valentina_role": "Empty"
+    "Valentina_role": "Social Media Manager"
   },
   "SenseView": {
     "empty": "There is nothing here, check back later!"
