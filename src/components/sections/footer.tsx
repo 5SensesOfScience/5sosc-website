@@ -45,8 +45,8 @@ export default function Footer() {
           </Link>
         </FooterSection>
         <FooterSection title={t("contact")}>
-          <Link href="mailto:5sensesofscience@gmail.com" className="py-2">
-            5sensesofscience@gmail.com
+          <Link href="mailto:info@5sensesofscience.org" className="py-2">
+            info@5sensesofscience.org
           </Link>
         </FooterSection>
       </div>
