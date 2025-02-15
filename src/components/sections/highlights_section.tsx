@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl"
-import Highlight from "../ui/highlight"
 import Image from "next/image"
 
 const images = [
