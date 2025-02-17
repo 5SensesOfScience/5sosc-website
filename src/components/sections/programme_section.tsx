@@ -1,4 +1,6 @@
+import { Link } from "@/i18n/routing"
 import { DateTimeFormatOptions, useFormatter, useTranslations } from "next-intl"
+import { Button } from "../ui/button"
 
 export default function ProgrammeSection() {
   const t = useTranslations("Programme")
@@ -77,6 +79,18 @@ export default function ProgrammeSection() {
           <br />
           {formatter.dateTimeRange(Time(11, 45), Time(12, 45), timeFormat)}
         </p>
+      </div>
+
+      <div className="w-fit h-fit mx-auto pt-4">
+        <Link
+          href="https://www.eventbrite.com/e/entradas-exposicio-5-sentits-de-la-ciencia-1245798499849?aff=oddtdtcreator"
+          target="_blank"
+          className="w-fit mx-auto"
+        >
+          <Button variant="outline" size="lg" className="mx-auto">
+            Register now
+          </Button>
+        </Link>
       </div>
     </div>
   )

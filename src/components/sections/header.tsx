@@ -13,6 +13,19 @@ import { ModeToggle } from "@/components/ui/mode-toggle"
 import Hamburger from "@/components/ui/hamburger"
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "../ui/language-switcher"
+import { Button } from "../ui/button"
+
+function RegisterButton({ className }: { className?: string | undefined }) {
+  return (
+    <Link
+      href="https://www.eventbrite.com/e/entradas-exposicio-5-sentits-de-la-ciencia-1245798499849?aff=oddtdtcreator"
+      target="_blank"
+      className={className ? className : ""}
+    >
+      <Button variant="outline">Register now</Button>
+    </Link>
+  )
+}
 
 function Nav({ className }: { className?: string }) {
   const t = useTranslations("Header")
@@ -100,6 +113,8 @@ function Nav({ className }: { className?: string }) {
         </NavigationMenuList>
       </NavigationMenu>
 
+      <RegisterButton />
+
       <div className="m-auto w-fit h-fit">
         <ModeToggle />
       </div>
@@ -133,6 +148,7 @@ export default function Header() {
       </Link>
       <Nav className="hidden md:flex" />
       <HamburgerNav className="md:hidden" />
+      <RegisterButton className="pt-4 md:hidden" />
     </div>
   )
 }
