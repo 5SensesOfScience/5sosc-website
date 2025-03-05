@@ -4,7 +4,7 @@ key: red_blue
 title: Red and Blue
 description: What is the Doppler Effect, and how is it useful?
 date: 2025-03-05T13:16:00.000Z
-image: https://cdn.eso.org/images/large/eso0722e.jpg
+image: radial_velocity.jpg
 sense: Sight
 ---
 ## What is the Doppler Effect?
