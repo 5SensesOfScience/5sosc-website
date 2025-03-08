@@ -55,8 +55,10 @@ export default function PostView({
             className="h-full w-auto mx-auto"
           />
         </div>
-        <div className="markdown">
-          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
+        <div className="markdown prose">
+          <Markdown remarkPlugins={[remarkGfm]} className="prose list-disc">
+            {post.content}
+          </Markdown>
         </div>
       </div>
 
