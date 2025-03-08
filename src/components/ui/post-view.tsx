@@ -3,10 +3,12 @@
 import { Link } from "@/i18n/routing"
 import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
+import Video from "next-video"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { Button } from "./button"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import path from "path"
 
 export default function PostView({
   sense,
@@ -20,6 +22,7 @@ export default function PostView({
     description: string
     date: string
     image: string
+    video: string | null
     content: string
   }
   posts: { slug: string; key: string; title: string }[]
@@ -46,14 +49,22 @@ export default function PostView({
       <hr className="my-2 border-foreground" />
       <div className="flex flex-col gap-4">
         <div className="max-w-full max-h-[70vh] aspect-[5/3]">
-          <Image
-            src={"/decap_assets/" + post.image}
-            alt={post.title}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-full w-auto mx-auto"
-          />
+          {post.video ? (
+            <video
+              src={path.join("/videos", post.video)}
+              controls
+              className="mx-auto"
+            />
+          ) : (
+            <Image
+              src={"/decap_assets/" + post.image}
+              alt={post.title}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-full w-auto mx-auto"
+            />
+          )}
         </div>
         <div className="markdown prose">
           <Markdown remarkPlugins={[remarkGfm]} className="prose list-disc">
