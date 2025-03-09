@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 @layer base {
   * {
@@ -95,6 +96,10 @@
 
     img {
       @apply max-h-[200px] max-w-[300px] my-4;
+    }
+
+    li {
+      @apply list-disc ml-4;
     }
   }
 }
