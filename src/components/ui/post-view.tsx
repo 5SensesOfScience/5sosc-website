@@ -3,7 +3,6 @@
 import { Link } from "@/i18n/routing"
 import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
-import Video from "next-video"
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { Button } from "./button"
