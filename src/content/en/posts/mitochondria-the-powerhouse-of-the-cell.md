@@ -70,7 +70,7 @@ On a large piece of cardstock, draw the inner mitochondrial membrane, rememberin
 
 Place the cut-out pieces on top of the inner mitochondrial membrane you just drew. Follow the next diagram (attached photo)
 
-![A cardboard model of the electron transport chain](/decap_assets/dsc_2002.jpg)
+![A cardboard model of the electron transport chain](/decap_assets/etc_activity.jpg)
 
 3. Simulate the dynamics of the ETC:
 
