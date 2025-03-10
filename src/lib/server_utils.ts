@@ -19,6 +19,7 @@ export async function getPostsByCategory(locale: string, category: string) {
       description: data.description,
       date: data.date,
       image: data.image,
+      video: data.video,
       sense: data.sense,
     }
   })
@@ -46,6 +47,7 @@ export async function getPost(locale: string, category: string, key: string) {
     description: data.description,
     date: data.date,
     image: data.image,
+    video: data.video,
     sense: data.sense,
     content,
   }
