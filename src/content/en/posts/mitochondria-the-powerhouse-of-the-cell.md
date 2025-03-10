@@ -70,11 +70,13 @@ On a large piece of cardstock, draw the inner mitochondrial membrane, rememberin
 
 Place the cut-out pieces on top of the inner mitochondrial membrane you just drew. Follow the next diagram (attached photo)
 
+![A cardboard model of the electron transport chain](dsc_2002.jpg)
+
 3. Simulate the dynamics of the ETC:
 
    1. Place the protons in the mitochondrial matrix, which is the part below the membrane.
    2. Take the electron, represented by the felt ball, and pass it through the four protein complexes (remember that the electron can enter through the first or second complex, depending on the electron donor).
-    3. As the electron moves through a complex, protons (H+) are transported from the mitochondrial matrix to the intermembrane space, crossing the membrane.
-    4. Finally, move the protons accumulated in the intermembrane space towards the ATP synthase, where energy will be produced in the form of ATP.
+   3. As the electron moves through a complex, protons (H+) are transported from the mitochondrial matrix to the intermembrane space, crossing the membrane.
+   4. Finally, move the protons accumulated in the intermembrane space towards the ATP synthase, where energy will be produced in the form of ATP.
 
 Now, in the mutant DNA model, if a protein that makes up the protein complex is not functional, the electron cannot pass through all the complexes efficiently, reducing the movement of protons and, consequently, ATP production.
