@@ -13,7 +13,7 @@ Mitochondria are found inside most eukaryotic cells and have their **own genetic
 
 The number of mitochondria inside each cell varies according to its energy needs, with the muscles, brain and heart being the organs that will have large numbers - there may even be thousands!
 
-![A graphic showing the flow of electrons through 4 proteins in the electron transport chain](etc.png)
+![A graphic showing the flow of electrons through 4 proteins in the electron transport chain](/decap_assets/etc.png)
 
 Within the respiratory chain, electrons (negatively charged) move through a series of “**complexes**” located in the inner membrane of the mitochondrion, generating a gradient of protons (positively charged), which will be used by **ATP synthase** to generate ATP.
 
@@ -70,7 +70,7 @@ On a large piece of cardstock, draw the inner mitochondrial membrane, rememberin
 
 Place the cut-out pieces on top of the inner mitochondrial membrane you just drew. Follow the next diagram (attached photo)
 
-![A cardboard model of the electron transport chain](dsc_2002.jpg)
+![A cardboard model of the electron transport chain](/decap_assets/dsc_2002.jpg)
 
 3. Simulate the dynamics of the ETC:
 
