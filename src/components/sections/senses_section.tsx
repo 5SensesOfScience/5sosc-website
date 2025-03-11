@@ -1,4 +1,3 @@
-import SeeMoreButton from "../ui/see-more"
 import { getPostsByCategory } from "@/lib/server_utils"
 import { getTranslations } from "next-intl/server"
 import { Post } from "@/lib/server_utils"
