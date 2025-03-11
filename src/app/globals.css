@@ -95,7 +95,7 @@
     }
 
     img {
-      @apply max-h-[200px] max-w-[300px] my-4;
+      @apply w-full max-w-[800px] h-auto mx-auto my-4;
     }
 
     li {
