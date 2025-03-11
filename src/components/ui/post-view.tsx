@@ -8,6 +8,7 @@ import remarkGfm from "remark-gfm"
 import { Button } from "./button"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import path from "path"
+import { Post } from "@/lib/server_utils"
 
 export default function PostView({
   sense,
@@ -15,16 +16,8 @@ export default function PostView({
   posts,
 }: {
   sense: string
-  post: {
-    key: string
-    title: string
-    description: string
-    date: string
-    image: string
-    video: string | null
-    content: string
-  }
-  posts: { slug: string; key: string; title: string }[]
+  post: Post
+  posts: Array<Post>
 }) {
   const currentIndex = posts.findIndex(
     (p: { key: string }) => p.key === post.key
@@ -37,9 +30,9 @@ export default function PostView({
   const locale = useLocale()
 
   return (
-    <div className="px-4">
+    <div className="post px-4">
       <div className="flex flex-col items-center md:items-start">
-        <h1 className="text-2xl font-fancy">{post.title}</h1>
+        <h1 className="text-2xl font-fancy text-justify">{post.title}</h1>
         <p className="text-lg opacity-75">{post.description}</p>
         <p className="text-sm opacity-50">
           Published on {new Date(post.date).toLocaleDateString(locale)}
@@ -52,7 +45,7 @@ export default function PostView({
             <video
               src={path.join("/videos", post.video)}
               controls
-              className="mx-auto"
+              className="mx-auto max-h-full"
             />
           ) : (
             <Image
@@ -65,6 +58,11 @@ export default function PostView({
             />
           )}
         </div>
+        {post.audio && (
+          <div className="w-fit mx-auto">
+            <audio src={path.join("/audios", post.audio)} controls />
+          </div>
+        )}
         <div className="markdown prose">
           <Markdown remarkPlugins={[remarkGfm]} className="prose list-disc">
             {post.content}
