@@ -15,7 +15,7 @@ function FooterSection({
       <h2 className="mb-2 text-center md:text-right text-xl font-semibold">
         {title}
       </h2>
-      <div className="text-lg md:text-xl flex items-center md:items-start justify-center">
+      <div className="text-lg md:text-xl flex flex-col md:flex-row items-center gap-2 justify-center">
         {children}
       </div>
     </div>
@@ -34,7 +34,38 @@ export default function Footer() {
         height={100}
       />
       <div className="flex flex-col md:items-start md:flex-row gap-2 md:gap-6">
-        <FooterSection title={t("sponsors")}>TBD</FooterSection>
+        <FooterSection title={t("sponsors")}>
+          <Image
+            src="/sponsors/barcelona_logo.jpg"
+            alt="Ajuntament de Barcelona logo"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/sponsors/ICFO_logo.png"
+            alt="ICFO logo"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/sponsors/ICIQ_logo.png"
+            alt="ICIQ logo"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/sponsors/ICN2_logo.png"
+            alt="ICN2 logo"
+            width={80}
+            height={80}
+          />
+          <Image
+            src="/sponsors/IRB_logo.png"
+            alt="IRB logo"
+            width={80}
+            height={80}
+          />
+        </FooterSection>
         <FooterSection title={t("social_media")}>
           <Link
             href="https://instagram.com/5sensesofscience"
