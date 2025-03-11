@@ -40,7 +40,7 @@ export default async function SensesSection({ locale }: { locale: string }) {
 
   return (
     <>
-      <h2 className="text-4xl font-fancy mb-12 text-center">
+      <h2 className="text-4xl font-fancy mb-12 text-center" id="exhibition">
         {t("virtual_exhibition")}
       </h2>
       <div id="senses" className="flex flex-col gap-8 mb-6">
