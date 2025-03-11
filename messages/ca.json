@@ -5,7 +5,8 @@
     "program": "Programa",
     "senses": "Sentits",
     "team": "L'equip",
-    "find_us": "Troba'ns"
+    "find_us": "Troba'ns",
+    "exhibition": "Exposició"
   },
   "Footer": {
     "sponsors": "Patrocinadors",
@@ -19,7 +20,8 @@
     "taste": "Assaboreix",
     "touch": "Toca",
     "science": "Ciència",
-    "seemore": "Veure més..."
+    "seemore": "Veure més...",
+    "virtual_exhibition": "Exposició virtual"
   },
   "Highlights": {
     "heading": "Vista prèvia"

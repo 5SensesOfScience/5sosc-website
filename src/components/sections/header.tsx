@@ -52,40 +52,16 @@ function Nav({ className }: { className?: string }) {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link
-              href={makeLink("#venue")}
+              href={makeLink("#exhibition")}
               legacyBehavior
               passHref
               className="scroll-smooth"
             >
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("venue")}
+                {t("exhibition")}
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link
-              href={makeLink("#program")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("program")}
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          {/*<NavigationMenuItem>
-            <Link
-              href={makeLink("#senses")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("senses")}
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>*/}
           <NavigationMenuItem>
             <Link
               href={makeLink("#team")}
@@ -98,18 +74,6 @@ function Nav({ className }: { className?: string }) {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          {/*<NavigationMenuItem>
-            <Link
-              href={makeLink("#findus")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("find_us")}
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>*/}
         </NavigationMenuList>
       </NavigationMenu>
 

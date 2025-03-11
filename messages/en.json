@@ -5,7 +5,8 @@
     "program": "Program",
     "senses": "Senses",
     "team": "Team",
-    "find_us": "Find us"
+    "find_us": "Find us",
+    "exhibition": "Exhibition"
   },
   "Footer": {
     "sponsors": "Sponsors",
@@ -19,7 +20,8 @@
     "taste": "Taste",
     "touch": "Touch",
     "science": "Science",
-    "seemore": "See more..."
+    "seemore": "See more...",
+    "virtual_exhibition": "Virtual Exhibition"
   },
   "Highlights": {
     "heading": "Preview"
