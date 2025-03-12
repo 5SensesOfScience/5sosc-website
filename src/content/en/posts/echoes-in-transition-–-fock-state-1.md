@@ -1,11 +1,11 @@
 ---
 locale: en
 key: echoes_fock
-title: Echoes in Transition – Fock State
+title: Echoes in Transition – Schrödinger State
 description: Transforming quantum systems into an experience
 date: 2025-03-12T21:05:00.000Z
-image: fock.png
-audio: fock_juliette.wav
+image: schrodinger.png
+audio: schrodinger_juliette.wav
 sense: Hearing
 ---
 The **sonification method** in *Echoes in Transition* transforms quantum data into an **immersive auditory experience**. The sounds evoke the transition between a **Fock state** and a **Schrödinger cat state**.
