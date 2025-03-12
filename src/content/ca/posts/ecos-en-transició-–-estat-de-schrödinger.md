@@ -4,7 +4,7 @@ key: echoes_schrodinger
 title: Ecos en Transició – Estat de Schrödinger
 description: Transformant sistemes quàntics en una experiència
 date: 2025-03-12T21:20:00.000Z
-image: fock.png
+image: schrodinger.png
 audio: schrodinger_juliette.wav
 sense: Hearing
 ---
