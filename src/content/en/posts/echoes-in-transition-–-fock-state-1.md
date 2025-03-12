@@ -1,6 +1,6 @@
 ---
 locale: en
-key: echoes_fock
+key: echoes_schrodinger
 title: Echoes in Transition – Schrödinger State
 description: Transforming quantum systems into an experience
 date: 2025-03-12T21:05:00.000Z
