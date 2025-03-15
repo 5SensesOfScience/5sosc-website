@@ -28,7 +28,7 @@ This weirdness isn’t just a theory—it’s been **tested and confirmed** in c
 
 **2025** has been declared the **International Year of Quantum Science and Technology** (IYQ) by the **United Nations**, highlighting the importance of quantum science and its transformative **potential for our future**. This exhibition celebrates the cutting-edge exploration of quantum phenomena, including sonification, as part of this global initiative.
 
-3. What is the Wigner Function?
+## What is the Wigner Function?
 
 The **Wigner function** is a **special tool** used in quantum mechanics to represent a particle’s **position and momentum** (=mass x velocity) at the same time. It’s like a quantum version of a weather map, showing not just where a system is,but also **how it behaves dynamically**.
 
