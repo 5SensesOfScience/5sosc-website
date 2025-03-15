@@ -4,19 +4,7 @@ key: wigner_fock
 title: Escoltar la Funció de Wigner – Estat de Fock
 description: Escolta el comportament de partícules
 date: 2025-03-15T18:42:00.000Z
-image: Què és la Sonificació?La sonificació és el procés de convertir lesdades
-  en so. Igual que un gràfic transforma elsnúmeros en una representació visual,
-  lasonificació transforma les dades en àudio. Elscientífics utilitzen aquesta
-  tècnica per explorarfenòmens complexos, fent que els patrons siguinmés
-  intuïtius i fins i tot revelant detalls quepodrien ser difícils de veure.Pensa
-  en un monitor cardíac en un hospital:piula més ràpid quan la freqüència
-  cardíacaaugmenta i més lent quan disminueix. Aquest ésun exemple senzill de
-  com el so pot representarles dades. En escenaris més complexos, com
-  elssistemes quàntics, la sonificació pot revelarpatrons inesperats, oferint
-  noves maneresd'entendre la física quàntica de manera mésintuïtiva.Què passaria
-  si poguessis escoltar les partículesquàntiques elles mateixes? En aquesta
-  exposició,experimentaràs com els fenòmens quànticspoden ser transformats en
-  so.
+image: wigner.png
 audio: fock_wigner.wav
 sense: Hearing
 ---
