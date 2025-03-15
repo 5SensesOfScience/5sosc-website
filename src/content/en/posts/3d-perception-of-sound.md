@@ -11,7 +11,7 @@ sense: Hearing
 
 Our ears are finely tuned instruments that help us hear the world around us. When a sound is produced, it creates **vibrations in the air**, called **sound waves**. These waves are collected by the pinna (the outer part of the ear), which acts like a funnel, directing the sound into the **ear canal**. The sound waves then hit the **eardrum**, causing it to **vibrate**. These vibrations are passed through three tiny bones in the middle ear and **sent to the cochlea** in the inner ear, where they are converted into **electrical signals**. These signals travel to the brain, which processes them as sound. This is how we hear general sounds.
 
-![Diagram of a human ear](ear_en.png)
+![Diagram of a human ear](/decap_assets/ear_en.png)
 
 ## How Our Ears Locate Sound?
 
