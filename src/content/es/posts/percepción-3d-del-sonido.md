@@ -11,7 +11,7 @@ sense: Hearing
 
 Nuestros oídos son instrumentos finamente afinados que nos permiten escuchar el mundo que nos rodea. Cuando se produce un sonido, crea **vibraciones en el aire**, llamadas **ondas sonoras**. Estas ondas son captadas por el **pabellón** (la parte externa del oído), que actúa como un embudo, dirigiendo el sonido al **conducto auditivo**. Luego, las ondas sonoras llegan al **tímpano**, haciendo que **vibre**. Estas vibraciones se transmiten a través de tres pequeños huesos en el oído medio y **se envían a la cóclea** en el oído interno, donde se convierten en **señales eléctricas**. Estas señales viajan al cerebro, que las procesa como sonido. Así es como escuchamos los sonidos generales.
 
-![Diagrama del oído humano](ear_es.png)
+![Diagrama del oído humano](/decap_assets/ear_es.png)
 
 ## ¿Cómo Nuestro Oído Localiza el Sonido?
 
