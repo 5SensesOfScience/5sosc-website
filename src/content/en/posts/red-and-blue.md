@@ -5,7 +5,7 @@ title: Red and Blue
 description: What is the Doppler Effect, and how is it useful?
 date: 2025-03-05T13:16:00.000Z
 image: radial_velocity.jpg
-video: planets_video_4.mp4
+video: planets_video.mp4
 sense: Sight
 ---
 
