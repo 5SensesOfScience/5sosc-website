@@ -1,7 +1,7 @@
 ---
 locale: en
 key: wigner_fock
-title: Hearing the Wigner Function
+title: Hearing the Wigner Function – Fock State
 description: Hear the behavior of particles
 date: 2025-03-15T18:27:00.000Z
 image: https://5sensesofscience.org/admin#/collections/posts
