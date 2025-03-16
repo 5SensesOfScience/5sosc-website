@@ -7,25 +7,16 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   navigationMenuTriggerStyle,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
 } from "@/components/ui/navigation-menu"
 import Image from "next/image"
 import { ModeToggle } from "@/components/ui/mode-toggle"
 import Hamburger from "@/components/ui/hamburger"
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "../ui/language-switcher"
-import { Button } from "../ui/button"
 
-function RegisterButton({ className }: { className?: string | undefined }) {
-  return (
-    <Link
-      href="https://www.eventbrite.com/e/entradas-exposicio-5-sentits-de-la-ciencia-1245798499849?aff=oddtdtcreator"
-      target="_blank"
-      className={className ? className : ""}
-    >
-      <Button variant="outline">Register now</Button>
-    </Link>
-  )
-}
+const senses = ["sight", "hearing", "smell", "taste", "touch"]
 
 function Nav({ className }: { className?: string }) {
   const t = useTranslations("Header")
@@ -39,45 +30,47 @@ function Nav({ className }: { className?: string }) {
       <NavigationMenu>
         <NavigationMenuList className="flex-col md:flex-row">
           <NavigationMenuItem>
-            <Link
+            <NavigationMenuLink
               href={makeLink("#top")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
+              className={navigationMenuTriggerStyle()}
             >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("home")}
-              </NavigationMenuLink>
-            </Link>
+              {t("home")}
+            </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link
-              href={makeLink("#exhibition")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
-            >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                href={makeLink("#exhibition")}
+                className="scroll-smooth"
+              >
                 {t("exhibition")}
               </NavigationMenuLink>
-            </Link>
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="flex flex-col gap-3 p-4 bg-background">
+                {senses.map((sense, index) => (
+                  <li key={index}>
+                    <NavigationMenuLink
+                      href={makeLink("#" + sense)}
+                      key={index}
+                    >
+                      {t(sense)}
+                    </NavigationMenuLink>
+                  </li>
+                ))}
+              </ul>
+            </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link
+            <NavigationMenuLink
               href={makeLink("#team")}
-              legacyBehavior
-              passHref
-              className="scroll-smooth"
+              className={navigationMenuTriggerStyle()}
             >
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                {t("team")}
-              </NavigationMenuLink>
-            </Link>
+              {t("team")}
+            </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-
-      <RegisterButton />
 
       <div className="m-auto w-fit h-fit">
         <ModeToggle />
@@ -112,7 +105,6 @@ export default function Header() {
       </Link>
       <Nav className="hidden md:flex" />
       <HamburgerNav className="md:hidden" />
-      <RegisterButton className="pt-4 md:hidden" />
     </div>
   )
 }
