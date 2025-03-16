@@ -77,21 +77,26 @@
     @apply bg-background text-foreground;
   }
 
-  #venue,
-  #program,
-  #team {
-    @apply scroll-mt-14;
+  h1,
+  h2 {
+    @apply scroll-mt-28;
   }
 }
 
 @layer components {
   .markdown {
+    @apply text-justify;
+
     h1 {
       @apply text-4xl font-fancy;
     }
 
     h2 {
-      @apply text-2xl font-semibold;
+      @apply text-2xl font-semibold py-2;
+    }
+
+    h3 {
+      @apply text-xl font-semibold py-2;
     }
 
     img {
