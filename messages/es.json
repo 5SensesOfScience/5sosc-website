@@ -6,7 +6,12 @@
     "senses": "Sentidos",
     "team": "El equipo",
     "find_us": "Encuentranos",
-    "exhibition": "Exposición"
+    "exhibition": "Exposición",
+    "sight": "Vista",
+    "hearing": "Oído",
+    "smell": "Olfato",
+    "taste": "Gusto",
+    "touch": "Tacto"
   },
   "Footer": {
     "sponsors": "Patrocinadores",
@@ -65,7 +70,7 @@
     "empty": "¡No hay nada aquí, vuelve más tarde!"
   },
   "PostView": {
-    "published": "Publicado",
+    "published": "Publicado el",
     "back": "Volver a",
     "sight": "Vista",
     "hearing": "Oído",

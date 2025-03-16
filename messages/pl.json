@@ -6,7 +6,12 @@
     "senses": "Zmysły",
     "team": "Zespół",
     "find_us": "Znajdź nas",
-    "exhibition": "Wystawa"
+    "exhibition": "Wystawa",
+    "sight": "Wzrok",
+    "hearing": "Słuch",
+    "smell": "Węch",
+    "taste": "Smak",
+    "touch": "Dotyk"
   },
   "Footer": {
     "sponsors": "Sponsorzy",

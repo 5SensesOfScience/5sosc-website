@@ -6,7 +6,12 @@
     "senses": "Sentits",
     "team": "L'equip",
     "find_us": "Troba'ns",
-    "exhibition": "Exposició"
+    "exhibition": "Exposició",
+    "sight": "Vista",
+    "hearing": "Oïda",
+    "smell": "Olfacte",
+    "taste": "Gust",
+    "touch": "Tacte"
   },
   "Footer": {
     "sponsors": "Patrocinadors",
@@ -65,7 +70,7 @@
     "empty": "No hi ha res aquí, torna més tard!"
   },
   "PostView": {
-    "published": "Publicat",
+    "published": "Publicat el",
     "back": "Torna a",
     "sight": "Vista",
     "hearing": "Oïda",

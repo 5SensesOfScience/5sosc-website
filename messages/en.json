@@ -6,7 +6,12 @@
     "senses": "Senses",
     "team": "Team",
     "find_us": "Find us",
-    "exhibition": "Exhibition"
+    "exhibition": "Exhibition",
+    "sight": "Sight",
+    "hearing": "Hearing",
+    "smell": "Smell",
+    "taste": "Taste",
+    "touch": "Touch"
   },
   "Footer": {
     "sponsors": "Sponsors",
@@ -65,7 +70,7 @@
     "empty": "There is nothing here, check back later!"
   },
   "PostView": {
-    "published": "Published",
+    "published": "Published on",
     "back": "Back to",
     "sight": "Sight",
     "hearing": "Hearing",
