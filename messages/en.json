@@ -51,6 +51,10 @@
     "touch_t2": "Mitochondrial Disease",
     "touch_t3": "ATP Production"
   },
+  "Gallery": {
+    "heading": "Gallery",
+    "see_more": "See more on Google Photos"
+  },
   "Team": {
     "heading": "Five Senses Of Science Team",
     "Alba_role": "Live Event Coordinator",
