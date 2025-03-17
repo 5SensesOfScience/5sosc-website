@@ -5,6 +5,7 @@ title: Rojo y Azul
 description: ¿Qué es el efecto Doppler y dónde es útil?
 date: 2025-03-07T19:48:00.000Z
 image: radial_velocity.jpg
+video: planets_video.mp4
 sense: Sight
 ---
 ## ¿Qué es el Efecto Doppler?

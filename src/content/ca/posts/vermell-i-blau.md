@@ -5,6 +5,7 @@ title: Vermell i Blau
 description: Què és l'efecte Doppler i on és útil?
 date: 2025-03-07T20:17:00.000Z
 image: radial_velocity.jpg
+video: planets_video.mp4
 sense: Sight
 ---
 ## Què és l'Efecte Doppler?
