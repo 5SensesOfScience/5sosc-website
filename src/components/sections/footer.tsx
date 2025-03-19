@@ -12,9 +12,7 @@ function FooterSection({
 }) {
   return (
     <div>
-      <h2 className="mb-2 text-center md:text-right text-xl font-semibold">
-        {title}
-      </h2>
+      <h2 className="mb-2 text-center text-xl font-semibold">{title}</h2>
       <div className="text-lg md:text-xl flex flex-col md:flex-row items-center gap-2 justify-center">
         {children}
       </div>

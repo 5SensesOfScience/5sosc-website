@@ -6,7 +6,12 @@
     "senses": "Senses",
     "team": "Team",
     "find_us": "Find us",
-    "exhibition": "Exhibition"
+    "exhibition": "Exhibition",
+    "sight": "Sight",
+    "hearing": "Hearing",
+    "smell": "Smell",
+    "taste": "Taste",
+    "touch": "Touch"
   },
   "Footer": {
     "sponsors": "Sponsors",
@@ -46,6 +51,10 @@
     "touch_t2": "Mitochondrial Disease",
     "touch_t3": "ATP Production"
   },
+  "Gallery": {
+    "heading": "Gallery",
+    "see_more": "See more on Google Photos"
+  },
   "Team": {
     "heading": "Five Senses Of Science Team",
     "Alba_role": "Live Event Coordinator",
@@ -65,7 +74,7 @@
     "empty": "There is nothing here, check back later!"
   },
   "PostView": {
-    "published": "Published",
+    "published": "Published on",
     "back": "Back to",
     "sight": "Sight",
     "hearing": "Hearing",

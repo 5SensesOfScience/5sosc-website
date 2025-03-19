@@ -49,7 +49,10 @@ export default async function SensesSection({ locale }: { locale: string }) {
             sense.posts.length > 0 && (
               <div key={index} className="flex flex-col gap-6">
                 {/* Title */}
-                <h2 className="text-2xl font-fancy text-center">
+                <h2
+                  id={sense.sense}
+                  className="text-2xl font-fancy text-center"
+                >
                   <span className={`${"text-" + sense.sense}`}>
                     {t(sense.name)}
                   </span>{" "}

@@ -35,7 +35,7 @@ export default function PostView({
         <h1 className="text-2xl font-fancy text-justify">{post.title}</h1>
         <p className="text-lg opacity-75">{post.description}</p>
         <p className="text-sm opacity-50">
-          Published on {new Date(post.date).toLocaleDateString(locale)}
+          {t("published")} {new Date(post.date).toLocaleDateString(locale)}
         </p>
       </div>
       <hr className="my-2 border-foreground" />
