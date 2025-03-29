@@ -13,9 +13,9 @@ Spherification is a **culinary technique** that transforms liquids—such as jui
 
 The process relies on a **chemical reaction** between **sodium alginate** (a gelling agent derived from seaweed) and **calcium ions**. When a liquid containing sodium alginate comes into contact with calcium, a gel forms around it, trapping the liquid inside. The result? A visually striking and flavorful experience that elevates both **taste and texture**. This is known as a **polymerization** reaction
 
-![A drawing of a droplet of water with strawberries and polymer chains inside](taste_droplet.png)
+![A drawing of a droplet of water with strawberries and polymer chains inside](/decap_assets/taste_droplet.png)
 
-![A general schematic of a polymer chain, composed of multiple bead-like units](taste_chain.png)
+![A general schematic of a polymer chain, composed of multiple bead-like units](/decap_assets/taste_chain.png)
 
 ## **The Science Behind the Ingredients**
 
@@ -39,7 +39,7 @@ The success of spherification depends on two key ingredients:
   * **Calcium lactate (Ca(C₃H₅O₃)₂):** Used in reverse spherification. Milder in flavor and ideal for liquids that already contain some calcium.
 * **How calcium works in the process:** When sodium alginate meets calcium, the calcium ions act as **"molecular bridges"**, linking the alginate molecules together and forming a **gel-like network** around each drop of liquid.
 
-![A schematic of the reaction between sodium alginate and calcium ions](taste_reaction.png)
+![A schematic of the reaction between sodium alginate and calcium ions](/decap_assets/taste_reaction.png)
 
 ## **What Happens When the Proportion of Alginate or Calcium Is Incorrect?**
 
