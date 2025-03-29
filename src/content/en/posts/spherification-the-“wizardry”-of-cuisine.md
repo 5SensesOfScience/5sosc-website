@@ -26,7 +26,7 @@ The success of spherification depends on two key ingredients:
 * **What it is:** A natural polysaccharide extracted from brown seaweed (genus *Laminaria*).
 * **How it works:** When dissolved in water or juice, sodium alginate **remains in a free-flowing liquid state**. However, in the presence of calcium ions, it **cross-links into a gel**, forming a delicate membrane around droplets of liquid.
 
-![A diagram of the structure of the alginate polymer](taste_alginate.png)
+![A diagram of the structure of the alginate polymer](/decap_assets/taste_alginate.png)
 
 * **Why it’s special:** Unlike gelatin (which requires heat to set), sodium alginate forms a gel at room temperature when exposed to calcium. This allows for the creation of **cold, fresh, and vibrant spheres** without altering the flavor of the liquid inside.
 
