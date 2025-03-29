@@ -7,8 +7,6 @@ date: 2025-03-29T16:03:00.000Z
 image: spherification.jpg
 sense: Taste
 ---
-## **Spherification, the “wizardry” of cuisine**
-
 ## **What Function Does Spherification Have in Cooking?**
 
 Spherification is a **culinary technique** that transforms liquids—such as juices, sauces, or broths—into small spheres with a thin gel membrane. When bitten, these spheres **explode**, releasing a burst of flavor. This technique, pioneered by Ferran Adrià at El Bulli, has become a hallmark of **modernist molecular cuisine**, allowing chefs to create new textures and presentations leveraging concepts in chemistry and more generally science.
